@@ -9,12 +9,6 @@
     "type": "git",
     "url": "https://bitbucket.org/NYPL/dgx-react-footer.git"
   },
-  "files": [
-    "./"
-  ],
-  "directories": {
-    "lib": "./src"
-  },
   "scripts": {
       "build": "browserify ./src/footer.jsx -t reactify -t literalify -x react -s Footer -d",
     "dist:dev": "npm --loglevel=silent run build > dist/dgx-react-footer.dev.js",
