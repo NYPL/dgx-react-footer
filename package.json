@@ -10,7 +10,7 @@
     "url": "https://bitbucket.org/NYPL/dgx-react-footer.git"
   },
   "files": [
-    "./dist"
+    "./"
   ],
   "directories": {
     "lib": "./src"
