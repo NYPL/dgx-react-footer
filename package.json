@@ -3,14 +3,14 @@
   "description": "NYPl page footer component",
   "author": "Sean Redmond <seanredmond@nypl.org>",
   "version": "0.0.1",
-  "main": "./src/index.js",
+  "main": "./dist/footer.js",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://bitbucket.org/NYPL/dgx-react-footer.git"
   },
   "files": [
-    "./dist/npm"
+    "./dist"
   ],
   "directories": {
     "lib": "./src"
