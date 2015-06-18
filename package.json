@@ -1,0 +1,32 @@
+{
+  "name": "dgx-react-footer",
+  "description": "NYPl page footer component",
+  "author": "Sean Redmond <seanredmond@nypl.org>",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/NYPL/dgx-react-footer.git"
+  },
+  "files": [
+    "./dist/npm"
+  ],
+  "directories": {
+    "lib": "./src"
+  },
+  "scripts": {
+    "build": "browserify ./src/index.js -t reactify -t literalify -x react -s Typeahead -d",
+    "dist:dev": "npm --loglevel=silent run build > dist/react-typeahead-component.dev.js",
+    "dist:min": "npm --loglevel=silent run build -- -t [envify --NODE_ENV production] | uglifyjs -cmvb beautify=false,ascii_only=true - > dist/react-typeahead-component.min.js",
+    "jsx": "jsx ./src ./dist/npm -x jsx -x js"
+  },
+  "peerDependencies": {
+    "react": ">=0.13.1 <1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "react-tools": "^0.13.1",
+    "reactify": "^1.0.0",
+  }
+}
