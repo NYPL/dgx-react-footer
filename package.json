@@ -3,7 +3,7 @@
   "description": "NYPl page footer component",
   "author": "Sean Redmond <seanredmond@nypl.org>",
   "version": "0.0.1",
-  "main": "./dist/footer.js",
+  "main": "./footer.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
       "build": "browserify ./src/footer.jsx -t reactify -t literalify -x react -s Footer -d",
     "dist:dev": "npm --loglevel=silent run build > dist/dgx-react-footer.dev.js",
     "dist:min": "npm --loglevel=silent run build -- -t [envify --NODE_ENV production] | uglifyjs -cmvb beautify=false,ascii_only=true - > dist/dgx-react-footer.min.js",
-    "jsx": "jsx ./src ./dist -x jsx"
+    "jsx": "jsx ./src ./ -x jsx"
   },
   "peerDependencies": {
     "react": ">=0.13.1 <1.0.0"
