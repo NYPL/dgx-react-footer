@@ -6,6 +6,7 @@
                 return (
                         <div id="footer">
 
+                        <div id="footerLinks">
                         <ul id="footerColumn1">
                         <li>About</li>
                         <li>Press</li>
@@ -27,6 +28,7 @@
                         </div>
 
                         <div>© The New York Public Library, 2015</div>
+			</div>
                 );
             }
         });
