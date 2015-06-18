@@ -17,9 +17,9 @@
   },
   "scripts": {
       "build": "browserify ./src/index.js -t reactify -t literalify -x react -s Footer -d",
-    "dist:dev": "npm --loglevel=silent run build > dist/react-typeahead-component.dev.js",
-    "dist:min": "npm --loglevel=silent run build -- -t [envify --NODE_ENV production] | uglifyjs -cmvb beautify=false,ascii_only=true - > dist/react-typeahead-component.min.js",
-    "jsx": "jsx ./src ./dist/npm -x jsx -x js"
+    "dist:dev": "npm --loglevel=silent run build > dist/dgx-react-footer.dev.js",
+    "dist:min": "npm --loglevel=silent run build -- -t [envify --NODE_ENV production] | uglifyjs -cmvb beautify=false,ascii_only=true - > dist/dgx-react-footer.min.js",
+    "jsx": "jsx --follow-requires ./src ./dist/npm -x jsx -x js"
   },
   "peerDependencies": {
     "react": ">=0.13.1 <1.0.0"
