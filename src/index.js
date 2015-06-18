@@ -1,1 +1,2 @@
-module.exports = require('./components/footer.jsx');
+var Footer = require('./components/footer');
+module.exports = Footer;
