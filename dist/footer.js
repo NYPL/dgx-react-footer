@@ -40,5 +40,5 @@ null,
 'Language'))),
 _react2['default'].createElement('div',
 null,
-'© The New York Public Library, 2015'));}}]);return Footer;})(_react2['default'].Class);;module.exports = Radium(Footer);
+'© The New York Public Library, 2015'));}}]);return Footer;})(_react2['default'].Class);;module.exports = Footer;
 

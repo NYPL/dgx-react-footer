@@ -38,5 +38,5 @@ class Footer extends React.Class {
     }
 };
 
-module.exports = Radium(Footer);
+module.exports = Footer;
 
