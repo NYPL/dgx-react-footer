@@ -1,6 +1,7 @@
 import React from 'react';
+import Radium from 'radium';
 
-class Footer extends React.Class {
+let Footer = React.createClass({
     render () {
 	let styles = {
 	    base: {
@@ -36,7 +37,7 @@ class Footer extends React.Class {
 		</div>
         );
     }
-};
+});
 
-module.exports = Footer;
+module.exports = Radium(Footer);
 
