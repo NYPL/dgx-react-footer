@@ -1,36 +1,44 @@
-(function () {
-    "use strict";
-    var React = require('react'),
-        Footer = React.createClass({displayName: "Footer",
-            render: function () {
-                return (
-                        React.createElement("div", {id: "footer"}, 
+"use strict";var _interopRequireWildcard=function(obj){return obj && obj.__esModule?obj:{"default":obj};};var _React=require("react");var _React2=_interopRequireWildcard(_React);var Footer=_React2["default"].createClass({displayName:"Footer", render:function render(){return _React2["default"].createElement("div",
+{id:"footer"},
+_React2["default"].createElement("div",
+{id:"footerLinks"},
+_React2["default"].createElement("ul",
+{id:"footerColumn1"},
+_React2["default"].createElement("li",
+null,
+"About"),
+_React2["default"].createElement("li",
+null,
+"Press"),
+_React2["default"].createElement("li",
+null,
+"Careers"),
+_React2["default"].createElement("li",
+null,
+"Space Rental")),
+_React2["default"].createElement("ul",
+{id:"footerColumn2"},
+_React2["default"].createElement("li",
+null,
+"Shop"),
+_React2["default"].createElement("li",
+null,
+"Governance"),
+_React2["default"].createElement("li",
+null,
+"Press")),
+_React2["default"].createElement("ul",
+{id:"footerColumn3"},
+_React2["default"].createElement("li",
+null,
+"Terms & Conditions"),
+_React2["default"].createElement("li",
+null,
+"Accessibility"),
+_React2["default"].createElement("li",
+null,
+"Language"))),
+_React2["default"].createElement("div",
+null,
+"© The New York Public Library, 2015"));}});module.exports = Footer;
 
-                        React.createElement("div", {id: "footerLinks"}, 
-                        React.createElement("ul", {id: "footerColumn1"}, 
-                        React.createElement("li", null, "About"), 
-                        React.createElement("li", null, "Press"), 
-                        React.createElement("li", null, "Careers"), 
-                        React.createElement("li", null, "Space Rental")
-                        ), 
-
-                        React.createElement("ul", {id: "footerColumn2"}, 
-                        React.createElement("li", null, "Shop"), 
-                        React.createElement("li", null, "Governance"), 
-                        React.createElement("li", null, "Press")
-                        ), 
-
-                        React.createElement("ul", {id: "footerColumn3"}, 
-                        React.createElement("li", null, "Terms & Conditions"), 
-                        React.createElement("li", null, "Accessibility"), 
-                        React.createElement("li", null, "Language")
-                        )
-                        ), 
-
-                        React.createElement("div", null, "© The New York Public Library, 2015")
-			)
-                );
-            }
-        });
-    module.exports = Footer;
-}());
