@@ -23,6 +23,7 @@
     "browserify": "^9.0.3",
     "envify": "^3.4.0",
     "literalify": "^0.4.0",
+    "radium": "^0.13.0",
     "react-tools": "^0.13.1",
     "reactify": "^1.0.0",
     "uglify-js": "^2.4.20"

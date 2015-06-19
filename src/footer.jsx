@@ -1,9 +1,16 @@
 import React from 'react';
+import Radium from 'radium';
 
-let Footer = React.createClass({
-    render: function () {
+class Footer extends React.Class {
+    render () {
+	let styles = {
+	    base: {
+		background: 'red',
+	    }
+	};
+	
         return (
-                <div id="footer">
+                <div id="footer" style={styles.base}>
 		
                 <div id="footerLinks">
                 <ul id="footerColumn1">
@@ -30,7 +37,7 @@ let Footer = React.createClass({
 		</div>
         );
     }
-});
+};
 
-module.exports = Footer;
+module.exports = Radiuma(Footer);
 
