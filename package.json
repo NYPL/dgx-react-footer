@@ -3,7 +3,7 @@
   "description": "NYPl React Footer",
   "author": "Sean Redmond <seanredmond@nypl.org>",
   "version": "0.0.1",
-  "main": "dist/index.js",
+  "main": "dist/Footer.js",
   "license": "MIT",
   "repository": {
     "type": "git",
