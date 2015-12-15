@@ -7,6 +7,13 @@
 **
 **/
 
+.pinnedRight {
+    width: 288px;
+    margin: 0 0 0 auto;
+}
+	       
+	      
+
 .footer {
   position: relative;
   clear: both;
@@ -14,6 +21,7 @@
   padding: 30px 20px 100px;
   background: #7d7972;
   color: white;
+  font-family: "Kievit-Medium";
   
   .logoText {
     font-family: "nypl-moon";
@@ -36,15 +44,18 @@
     }
 
     .footerlinks {
-      padding: 0px;
+      padding: 90px 0 0 0;
 
       @include desktop {
         padding: 0 0 0 97px;
       }
 
       ul {
+	  @extend .pinnedRight;
+	  text-align: right;
         list-style: none;
         padding: 0;
+	font-size: 32px;
 
         @include tablet-and-up {
           margin: 0 20px;
@@ -91,7 +102,6 @@
 
           a {
             font-weight: 300;
-            font-size: 15px;
             color: #FFF;
             text-decoration: none;
 
@@ -104,11 +114,13 @@
     }
 
     .socialmedia {
-      position: absolute;
-      right: 0px;
+	@extend .pinnedRight;
+//      position: absolute;
+//     right: 0px;
       list-style-type: none;
-      text-align: right;
-      margin: 0 20px 0 0;
+
+      // icons are square, we want three across
+      width: 56px * 3;
 
       li {
         display: inline-block;
