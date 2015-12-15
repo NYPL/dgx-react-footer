@@ -26,7 +26,7 @@ class Footer extends React.Component {
 
     return (
       <footer id={this.props.id} className={this.props.className}>
-        <span className="MobileLogoText nypl-icon-logo-type"></span>	    
+        <span className="logoText nypl-icon-logo-type"></span>	    
         <div id={`${this.props.id}-content`}
           className={`${this.props.className}-content`}>
           <SocialMediaList
