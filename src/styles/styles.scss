@@ -33,6 +33,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      margin-top: 227px;
     //max-width: 1312px;
     //margin: 0 auto;
     //padding: 0;
@@ -43,7 +44,9 @@
     //}
 
     .footerlinks {
-      margin: 40px 0 0 0;	    
+      margin: 40px 0 0 0;
+      order: 2;
+	
 
       //@include desktop {
       //  padding: 0 0 0 97px;
@@ -112,10 +115,11 @@
     }
 
     .socialmedia {
+      order: 1;
       list-style-type: none;
 
       // icons are square, we want three across
-      width: 56px * 3;
+      width: 80px * 3;
 
       li {
         display: inline-block;
@@ -123,7 +127,7 @@
         a {
           display: block;
           color: #FFF;
-          font-size: 56px;
+          font-size: 80px;
           text-decoration: none;
 
           @include desktop {
@@ -166,6 +170,7 @@
       font-size: 20px;
       font-family: "Kievit-Book";
       text-align: right;
+      order: 3;
     }
   }
 }
