@@ -1,10 +1,10 @@
 const data = {
   SocialMedia: [
-    {name: 'Facebook', link: 'https://www.facebook.com/nypl', className: 'icon-facebook'},
-    {name: 'Twitter', link: 'https://twitter.com/nypl', className: 'icon-twitter2'},
-    {name: 'Instagram', link: 'https://instagram.com/nypl', className: 'icon-instagram'},
-    {name: 'Tumblr', link: 'https://nypl.tumblr.com/', className: 'icon-tumblr2'},
-    {name: 'Youtube', link: 'https://www.youtube.com/user/NewYorkPublicLibrary', className: 'icon-youtube'},
+    {name: 'Facebook', link: 'https://www.facebook.com/nypl', className: 'nypl-icon-facebook'},
+    {name: 'Twitter', link: 'https://twitter.com/nypl', className: 'nypl-icon-twitter'},
+    {name: 'Instagram', link: 'https://instagram.com/nypl', className: 'nypl-icon-instagram'},
+    {name: 'Tumblr', link: 'https://nypl.tumblr.com/', className: 'nypl-icon-tumblr'},
+    {name: 'Youtube', link: 'https://www.youtube.com/user/NewYorkPublicLibrary', className: 'nypl-icon-youtube'},
   ],
   FooterLinkLists: [
     {
