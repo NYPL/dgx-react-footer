@@ -26,20 +26,20 @@ class Footer extends React.Component {
 
     return (
       <footer id={this.props.id} className={this.props.className}>
-        <span className="logoText nypl-icon-logo-type"></span>	    
         <div id={`${this.props.id}-content`}
           className={`${this.props.className}-content`}>
+          <div className='footerlinks'>
+            {footerLinkLists}
+          </div>
           <SocialMediaList
             data={data.SocialMedia}
             id='SocialMediaList'
             className='socialmedia' />
-          <div className='footerlinks'>
-            {footerLinkLists}
-          </div>
           <div id='copyright' className='copyright'>
             <p>© The New York Public Library, {new Date().getFullYear()}</p>
           </div>
         </div>
+        <span className="logoText nypl-icon-logo-type"></span>	    
       </footer>
     );
   }
