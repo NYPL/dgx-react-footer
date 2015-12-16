@@ -13,96 +13,100 @@
   margin-top: 20px;
   padding: 30px 20px 100px;
   background: #7d7972;
+  color: white;
+  font-family: "Kievit-Medium";
+  min-height: 400px;
 
-  @include desktop {
-    min-width: 1014px;
-    padding: 30px 21px 100px 20px;
+  a {
+    font-weight: 300;
+    color: #FFF;
+    text-decoration: none;
+      
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .logoText {
+    font-family: "nypl-moon";
+    font-size: 160px;
+    position: absolute;
+    top: 46px;
+    left: 32px;
+
+    @media (min-width: 800px) {
+      font-size: 80px;
+      top: 30px;
+      left: 30px;
+    }
   }
 
   &-content {
-    max-width: 1312px;
-    margin: 0 auto;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 227px;
 
-    @include desktop {
-      padding: 0;
-      width: 100%;
+    @media (min-width: 800px) {
+	margin-top: 0;
+    }	
+
+    @media (min-width: 1100px) {
+      flex-direction: row;
+      align-items: flex-start;
+      position: absolute;
+      top: 30px;
+      right: 0;
     }
 
     .footerlinks {
-      padding: 0px;
+      font-size: 32px;
+      line-height: 74px;
+      margin: 40px 0 0 0;
+      padding: 0;
+      order: 2;
+      list-style: none;
+      text-align: right;
+		      
+      @media (min-width: 800px) {
+        display: flex;
+	font-size: 16px;
+	line-height: 30px;
+	order: 1;
+	text-align: left;
+	margin: 0;
 
-      @include desktop {
-        padding: 0 0 0 97px;
+	li {
+          padding-right: 47px;
+	}
       }
 
       ul {
         list-style: none;
-        padding: 0;
+	padding: 0;
 
-        @include tablet-and-up {
-          margin: 0 20px;
-          &:first-of-type {
-            margin-left: 0px;
-            float: left;
-            width: 35%;
-          }
-          &:nth-of-type(2) {
-            float: left;
-          }
-          &:nth-of-type(3) {
-            clear: both;
-            margin-left: 0px;
-            width: 35%;
-            float: left;
-          }
-          &.last {
-            float: left;
-          }
-        }
-
-        @include desktop {
-          float: left;
-          width: 25% !important;
-
-          &:nth-of-type(3) {
-            margin-left: 20px;
-            clear: none;
-          }
-        }
-
-        li {
-          margin: 0px 0px 16px;
-          display: none;
-
-          @include desktop {
-            display: list-item;
-          }
-
-          &.footer1 {
-            display: list-item;
-          }
-
-          a {
-            font-weight: 300;
-            font-size: 15px;
-            color: #FFF;
-            text-decoration: none;
-
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
+	@media (max-width: 799px) {
+          position: absolute;
+	  left: -10000px;
+	  top: auto;
+	  width: 1px;
+	  height: 1px;
+	  overflow: hidden;
+	}
       }
     }
-
+    
     .socialmedia {
-      position: absolute;
-      right: 0px;
+      order: 1;
       list-style-type: none;
-      text-align: right;
-      margin: 0 20px 0 0;
+
+      // icons are square, we want three across
+      width: 80px * 3;
+      
+      @media (min-width: 800px) {
+        order: 2;
+	margin-top: 0
+      }
 
       li {
         display: inline-block;
@@ -110,17 +114,12 @@
         a {
           display: block;
           color: #FFF;
-          font-size: 24px;
+          font-size: 80px;
           text-decoration: none;
+	  @media (min-width: 800px) {
+            font-size: 40px;
+	  }
 
-          @include desktop {
-            opacity: .5;
-            @include transition(all .1s ease);
-          }
-
-          &:hover {
-            opacity: 1;
-          }
 
           .replaced-text {
             /* h5bp technique */
@@ -147,24 +146,23 @@
         }
       } 
     }
-      
-    .copyright {
-      clear: both;
-      text-align: center;
-      background: url(http://cdn-prod.www.aws.nypl.org/sites/all/themes/nypl_new/images/main-logo-lion.png) no-repeat;
-      background-size: 60px;
-      background-position: 50%;
-      
-      p {
-        max-width: none;
-        padding-top: 30px;
-        padding-bottom: 140px;
-        color: #FFF;
-        font-size: 14px;
-        font-weight: 300;
-        letter-spacing: .07em;
-        line-height: 2em;
-      }
+  }
+
+
+  .copyright {
+    margin: 40px 0 0 0;
+    font-size: 20px;
+    font-family: "Kievit-Book";
+    text-align: right;
+    right: 20px;
+
+    @media (min-width: 800px) {
+      text-align: left;
+      position: absolute;
+      left: 30px;
+      top: 180px;
+      margin: 0;
+      font-size: 13px;
     }
   }
 }
