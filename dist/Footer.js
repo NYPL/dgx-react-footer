@@ -29,10 +29,6 @@ var _componentsSocialMediaListSocialMediaListJs = require('./components/SocialMe
 
 var _componentsSocialMediaListSocialMediaListJs2 = _interopRequireDefault(_componentsSocialMediaListSocialMediaListJs);
 
-var _componentsFooterLinkListFooterLinkListJs = require('./components/FooterLinkList/FooterLinkList.js');
-
-var _componentsFooterLinkListFooterLinkListJs2 = _interopRequireDefault(_componentsFooterLinkListFooterLinkListJs);
-
 var _footerDataJs = require('./footerData.js');
 
 var _footerDataJs2 = _interopRequireDefault(_footerDataJs);

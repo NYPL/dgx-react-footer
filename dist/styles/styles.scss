@@ -7,15 +7,21 @@
 **
 **/
 
+$footer-color: #54514A;
+
 .footer {
   position: relative;
   clear: both;
   margin-top: 20px;
-  padding: 30px 20px 100px;
-  background: #7d7972;
+  padding: 15px 20px 100px;
+  background: $footer-color;
   color: white;
   font-family: "Kievit-Medium";
   min-height: 400px;
+
+  @media (min-width: 768px) {
+    padding: 30px 20px 100px;
+  }
 
   a {
     font-weight: 300;
@@ -29,10 +35,16 @@
 
   .logoText {
     font-family: "nypl-moon";
-    font-size: 160px;
+    font-size: 82px;
     position: absolute;
-    top: 46px;
-    left: 32px;
+    top: 15px;
+    left: 15px;
+
+    @media (min-width: 768px) {
+      font-size: 160px;
+      top: 46px;
+      left: 32px;
+    }
 
     @media (min-width: 800px) {
       font-size: 80px;
@@ -45,10 +57,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 227px;
+    margin-top: 75px;
+
+    @media (min-width: 768px) {
+      margin-top: 227px;      
+    }
 
     @media (min-width: 800px) {
-	margin-top: 0;
+      margin-top: 0;
     }	
 
     @media (min-width: 1100px) {
@@ -60,52 +76,63 @@
     }
 
     .footerLinks {
-      font-size: 32px;
-      line-height: 74px;
-      margin: 40px 0 0 0;
+      font-size: 16px;
+      line-height: 35px;
+      margin: 0;
       padding: 0;
       order: 2;
       list-style: none;
       text-align: right;
-		      
+		  
+      @media (min-width: 768px) {
+        margin: 40px 0 0 0;
+        font-size: 32px;
+        line-height: 74px;
+      }
+
       @media (min-width: 800px) {
         display: flex;
-	font-size: 16px;
-	line-height: 30px;
-	order: 1;
-	text-align: left;
-	margin: 0;
+      	font-size: 16px;
+      	line-height: 30px;
+      	order: 1;
+      	text-align: left;
+      	margin: 0;
 
-	li {
+  	    li {
           padding-right: 47px;
-	}
+  	    }
       }
 
       ul {
         list-style: none;
-	padding: 0;
+  	    padding: 0;
 
-	@media (max-width: 799px) {
+  	    @media (max-width: 799px) {
           position: absolute;
-	  left: -10000px;
-	  top: auto;
-	  width: 1px;
-	  height: 1px;
-	  overflow: hidden;
-	}
+      	  left: -10000px;
+      	  top: auto;
+      	  width: 1px;
+      	  height: 1px;
+      	  overflow: hidden;
+      	}
       }
     }
     
     .socialmedia {
       order: 1;
+      margin: 20px 0 15px;
       list-style-type: none;
 
       // icons are square, we want three across
-      width: 80px * 3;
-      
+      width: 45px * 3;
+
+      @media (min-width: 768px) {
+        width: 80px * 3;
+      }
+        
       @media (min-width: 800px) {
         order: 2;
-	margin-top: 0
+        margin-top: 0;
       }
 
       li {
@@ -114,12 +141,16 @@
         a {
           display: block;
           color: #FFF;
-          font-size: 80px;
+          font-size: 45px;
           text-decoration: none;
-	  @media (min-width: 800px) {
-            font-size: 40px;
-	  }
 
+          @media (min-width: 768px) {
+            font-size: 80px;
+          }
+
+          @media (min-width: 800px) {
+            font-size: 40px;
+          }
 
           .replaced-text {
             /* h5bp technique */
@@ -138,7 +169,7 @@
         [class*=" icon-"] {
           padding: 0;
         }
-        
+          
         [data-icon]:before, 
         [class^="icon-"]:before, 
         [class*=" icon-"]:before {
@@ -150,11 +181,16 @@
 
 
   .copyright {
-    margin: 40px 0 0 0;
-    font-size: 20px;
+    margin: 25px 0 0 0;
+    font-size: 12px;
     font-family: "Kievit-Book";
     text-align: right;
-    right: 20px;
+
+    @media (min-width: 768px) {
+      margin: 40px 0 0 0;
+      font-size: 20px;
+      right: 20px;
+    }
 
     @media (min-width: 800px) {
       text-align: left;
