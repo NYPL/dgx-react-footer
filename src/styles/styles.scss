@@ -19,7 +19,7 @@ $footer-color: #54514A;
   font-family: "Kievit-Medium";
   min-height: 400px;
 
-  @media (min-width: 620px) {
+  @media (min-width: 768px) {
     padding: 30px 20px 100px;
   }
 
@@ -40,7 +40,7 @@ $footer-color: #54514A;
     top: 15px;
     left: 15px;
 
-    @media (min-width: 620px) {
+    @media (min-width: 768px) {
       font-size: 160px;
       top: 46px;
       left: 32px;
@@ -59,7 +59,7 @@ $footer-color: #54514A;
     align-items: flex-end;
     margin-top: 75px;
 
-    @media (min-width: 620px) {
+    @media (min-width: 768px) {
       margin-top: 227px;      
     }
 
@@ -84,7 +84,7 @@ $footer-color: #54514A;
       list-style: none;
       text-align: right;
 		  
-      @media (min-width: 620px) {
+      @media (min-width: 768px) {
         margin: 40px 0 0 0;
         font-size: 32px;
         line-height: 74px;
@@ -126,7 +126,7 @@ $footer-color: #54514A;
       // icons are square, we want three across
       width: 45px * 3;
 
-      @media (min-width: 620px) {
+      @media (min-width: 768px) {
         width: 80px * 3;
       }
         
@@ -144,7 +144,7 @@ $footer-color: #54514A;
           font-size: 45px;
           text-decoration: none;
 
-          @media (min-width: 620px) {
+          @media (min-width: 768px) {
             font-size: 80px;
           }
 
@@ -186,7 +186,7 @@ $footer-color: #54514A;
     font-family: "Kievit-Book";
     text-align: right;
 
-    @media (min-width: 620px) {
+    @media (min-width: 768px) {
       margin: 40px 0 0 0;
       font-size: 20px;
       right: 20px;
