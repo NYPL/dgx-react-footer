@@ -1,6 +1,6 @@
 // Import libraries
 import React from 'react';
-import Radium from 'radium';
+import radium from 'radium';
 
 import SocialMediaItem from './SocialMediaItem.js';
 
@@ -11,15 +11,15 @@ class SocialMediaList extends React.Component {
   }
 
   render() {
-    let socialMediaItems = this.props.data.map((node, i) => {
-        return (
-          <SocialMediaItem
-            name={node.name}
-            link={node.link}
-            className={node.className}
-            key={i} />
-        );
-      });
+    const socialMediaItems = this.props.data.map((node, i) => {
+      return (
+        <SocialMediaItem
+          name={node.name}
+          link={node.link}
+          className={node.className}
+          key={i} />
+      );
+    });
 
     return (
       <ul className={this.props.className} style={this.props.style}>
@@ -29,4 +29,12 @@ class SocialMediaList extends React.Component {
   }
 }
 
-export default Radium(SocialMediaList);
+SocialMediaList.propTypes = {
+  className: React.PropTypes.string.isRequired,
+  name: React.PropTypes.string.isRequired,
+  link: React.PropTypes.string,
+  style: React.PropTypes.object,
+  data: React.PropTypes.array,
+};
+
+export default radium(SocialMediaList);

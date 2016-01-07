@@ -60,5 +60,13 @@ var SocialMediaList = (function (_React$Component) {
   return SocialMediaList;
 })(_react2['default'].Component);
 
+SocialMediaList.propTypes = {
+  className: _react2['default'].PropTypes.string.isRequired,
+  name: _react2['default'].PropTypes.string.isRequired,
+  link: _react2['default'].PropTypes.string,
+  style: _react2['default'].PropTypes.object,
+  data: _react2['default'].PropTypes.array
+};
+
 exports['default'] = (0, _radium2['default'])(SocialMediaList);
 module.exports = exports['default'];
