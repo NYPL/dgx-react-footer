@@ -192,6 +192,11 @@ var Footer = (function (_React$Component) {
   return Footer;
 })(_react2['default'].Component);
 
+Footer.propTypes = {
+  id: _react2['default'].PropTypes.string.isRequired,
+  className: _react2['default'].PropTypes.string.isRequired
+};
+
 Footer.defaultProps = {
   id: 'footer',
   className: 'footer',

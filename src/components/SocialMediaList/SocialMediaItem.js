@@ -1,6 +1,11 @@
 // Import libraries
 import React from 'react';
-import Radium from 'radium';
+import radium from 'radium';
+
+const styles = {
+  SocialMediaLink: {},
+  ReplacedText: {},
+};
 
 class SocialMediaItem extends React.Component {
   // Constructor used in ES6
@@ -8,12 +13,14 @@ class SocialMediaItem extends React.Component {
     super(props);
   }
 
-  render () {
+  render() {
     return (
-      <li key='SocialMediaNode' id={this.props.name}>
-        <a key='SocialMediaLink' className={this.props.className}
-          style={styles.SocialMediaLink} href={this.props.link}>
-          <span className='replaced-text' style={styles.ReplacedText}>
+      <li key="SocialMediaNode" id={this.props.name}>
+        <a key="SocialMediaLink"
+          className={this.props.className}
+          style={styles.SocialMediaLink}
+          href={this.props.link}>
+          <span className="replaced-text" style={styles.ReplacedText}>
             {this.props.name}
           </span>
         </a>
@@ -22,6 +29,10 @@ class SocialMediaItem extends React.Component {
   }
 }
 
-const styles = {};
+SocialMediaItem.propTypes = {
+  className: React.PropTypes.string.isRequired,
+  name: React.PropTypes.string.isRequired,
+  link: React.PropTypes.string,
+};
 
-export default Radium(SocialMediaItem);
+export default radium(SocialMediaItem);

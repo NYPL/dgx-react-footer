@@ -23,6 +23,11 @@ var _radium = require('radium');
 
 var _radium2 = _interopRequireDefault(_radium);
 
+var styles = {
+  SocialMediaLink: {},
+  ReplacedText: {}
+};
+
 var SocialMediaItem = (function (_React$Component) {
   _inherits(SocialMediaItem, _React$Component);
 
@@ -42,8 +47,10 @@ var SocialMediaItem = (function (_React$Component) {
         { key: 'SocialMediaNode', id: this.props.name },
         _react2['default'].createElement(
           'a',
-          { key: 'SocialMediaLink', className: this.props.className,
-            style: styles.SocialMediaLink, href: this.props.link },
+          { key: 'SocialMediaLink',
+            className: this.props.className,
+            style: styles.SocialMediaLink,
+            href: this.props.link },
           _react2['default'].createElement(
             'span',
             { className: 'replaced-text', style: styles.ReplacedText },
@@ -57,7 +64,11 @@ var SocialMediaItem = (function (_React$Component) {
   return SocialMediaItem;
 })(_react2['default'].Component);
 
-var styles = {};
+SocialMediaItem.propTypes = {
+  className: _react2['default'].PropTypes.string.isRequired,
+  name: _react2['default'].PropTypes.string.isRequired,
+  link: _react2['default'].PropTypes.string
+};
 
 exports['default'] = (0, _radium2['default'])(SocialMediaItem);
 module.exports = exports['default'];
