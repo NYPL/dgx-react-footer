@@ -52,143 +52,138 @@ var Footer = (function (_React$Component) {
         { id: this.props.id, className: this.props.className },
         _react2['default'].createElement(
           'div',
-          null,
+          { className: this.props.className + '-content' },
           _react2['default'].createElement(
-            'div',
-            { id: this.props.id + '-content',
-              className: this.props.className + '-content' },
+            'ul',
+            { className: 'footerLinks' },
             _react2['default'].createElement(
-              'ul',
-              { className: 'footerLinks' },
+              'li',
+              null,
               _react2['default'].createElement(
-                'li',
-                null,
-                _react2['default'].createElement(
-                  'a',
-                  { href: '/help/about-nypl' },
-                  'About NYPL'
-                ),
-                _react2['default'].createElement(
-                  'ul',
-                  null,
-                  _react2['default'].createElement(
-                    'li',
-                    null,
-                    _react2['default'].createElement(
-                      'a',
-                      { href: '/help/about-nypl/media-center' },
-                      'Press'
-                    )
-                  ),
-                  _react2['default'].createElement(
-                    'li',
-                    null,
-                    _react2['default'].createElement(
-                      'a',
-                      { href: '/careers' },
-                      'Careers'
-                    )
-                  ),
-                  _react2['default'].createElement(
-                    'li',
-                    null,
-                    _react2['default'].createElement(
-                      'a',
-                      { href: '/spacerental' },
-                      'Space Rental'
-                    )
-                  )
-                )
+                'a',
+                { href: '/help/about-nypl' },
+                'About NYPL'
               ),
               _react2['default'].createElement(
-                'li',
+                'ul',
                 null,
                 _react2['default'].createElement(
-                  'a',
-                  { href: '/help/about-nypl/legal-notices/privacy-policy' },
-                  'Privacy Policy'
-                ),
-                _react2['default'].createElement(
-                  'ul',
+                  'li',
                   null,
                   _react2['default'].createElement(
-                    'li',
-                    null,
-                    _react2['default'].createElement(
-                      'a',
-                      { href: '/policies' },
-                      'Other Policies'
-                    )
-                  ),
-                  _react2['default'].createElement(
-                    'li',
-                    null,
-                    _react2['default'].createElement(
-                      'a',
-                      { href: '/terms-conditions' },
-                      'Terms & Conditions'
-                    )
-                  ),
-                  _react2['default'].createElement(
-                    'li',
-                    null,
-                    _react2['default'].createElement(
-                      'a',
-                      { href: '/help/about-nypl/leadership/board-trustees' },
-                      'Governance'
-                    )
+                    'a',
+                    { href: '/help/about-nypl/media-center' },
+                    'Press'
                   )
-                )
-              ),
-              _react2['default'].createElement(
-                'li',
-                null,
-                _react2['default'].createElement(
-                  'a',
-                  { href: '/help/about-nypl/legal-notices/rules-and-regulations' },
-                  'Rules & Regulations'
                 ),
                 _react2['default'].createElement(
-                  'ul',
+                  'li',
                   null,
                   _react2['default'].createElement(
-                    'li',
-                    null,
-                    _react2['default'].createElement(
-                      'a',
-                      { href: '/help/community-outreach/services-for-persons-with-disabilities' },
-                      'Accessibility'
-                    )
-                  ),
+                    'a',
+                    { href: '/careers' },
+                    'Careers'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'li',
+                  null,
                   _react2['default'].createElement(
-                    'li',
-                    null,
-                    _react2['default'].createElement(
-                      'a',
-                      { href: '/language' },
-                      'Language'
-                    )
+                    'a',
+                    { href: '/spacerental' },
+                    'Space Rental'
                   )
                 )
               )
             ),
-            _react2['default'].createElement(_componentsSocialMediaListSocialMediaListJs2['default'], {
-              data: _footerDataJs2['default'].SocialMedia,
-              id: 'SocialMediaList',
-              className: 'socialmedia' })
-          ),
-          _react2['default'].createElement(
-            'div',
-            { id: 'copyright', className: 'copyright' },
             _react2['default'].createElement(
-              'p',
+              'li',
               null,
-              '© The New York Public Library, ',
-              new Date().getFullYear()
+              _react2['default'].createElement(
+                'a',
+                { href: '/help/about-nypl/legal-notices/privacy-policy' },
+                'Privacy Policy'
+              ),
+              _react2['default'].createElement(
+                'ul',
+                null,
+                _react2['default'].createElement(
+                  'li',
+                  null,
+                  _react2['default'].createElement(
+                    'a',
+                    { href: '/policies' },
+                    'Other Policies'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'li',
+                  null,
+                  _react2['default'].createElement(
+                    'a',
+                    { href: '/terms-conditions' },
+                    'Terms & Conditions'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'li',
+                  null,
+                  _react2['default'].createElement(
+                    'a',
+                    { href: '/help/about-nypl/leadership/board-trustees' },
+                    'Governance'
+                  )
+                )
+              )
+            ),
+            _react2['default'].createElement(
+              'li',
+              null,
+              _react2['default'].createElement(
+                'a',
+                { href: '/help/about-nypl/legal-notices/rules-and-regulations' },
+                'Rules & Regulations'
+              ),
+              _react2['default'].createElement(
+                'ul',
+                null,
+                _react2['default'].createElement(
+                  'li',
+                  null,
+                  _react2['default'].createElement(
+                    'a',
+                    { href: '/help/community-outreach/services-for-persons-with-disabilities' },
+                    'Accessibility'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'li',
+                  null,
+                  _react2['default'].createElement(
+                    'a',
+                    { href: '/language' },
+                    'Language'
+                  )
+                )
+              )
             )
           ),
-          _react2['default'].createElement('span', { className: 'logoText nypl-icon-logo-type' })
-        )
+          _react2['default'].createElement(_componentsSocialMediaListSocialMediaListJs2['default'], {
+            data: _footerDataJs2['default'].SocialMedia,
+            id: 'SocialMediaList',
+            className: 'socialmedia' })
+        ),
+        _react2['default'].createElement(
+          'div',
+          { id: 'copyright', className: 'copyright' },
+          _react2['default'].createElement(
+            'p',
+            null,
+            '© The New York Public Library, ',
+            new Date().getFullYear()
+          )
+        ),
+        _react2['default'].createElement('span', { className: 'logoText nypl-icon-logo-type' })
       );
     }
   }]);
