@@ -82,16 +82,7 @@ var Footer = (function (_React$Component) {
                   _react2['default'].createElement(
                     'a',
                     { href: '/careers' },
-                    'Careers'
-                  )
-                ),
-                _react2['default'].createElement(
-                  'li',
-                  null,
-                  _react2['default'].createElement(
-                    'a',
-                    { href: '/spacerental' },
-                    'Space Rental'
+                    'Careers at NYPL'
                   )
                 )
               )
@@ -198,9 +189,7 @@ Footer.propTypes = {
 
 Footer.defaultProps = {
   id: 'footer',
-  className: 'footer',
-  label: '',
-  lang: 'en'
+  className: 'footer'
 };
 
 exports['default'] = (0, _radium2['default'])(Footer);

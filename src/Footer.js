@@ -22,8 +22,7 @@ class Footer extends React.Component {
               <a href="/help/about-nypl">About NYPL</a>
               <ul>
                 <li><a href="/help/about-nypl/media-center">Press</a></li>
-                <li><a href="/careers">Careers</a></li>
-                <li><a href="/spacerental">Space Rental</a></li>
+                <li><a href="/careers">Careers at NYPL</a></li>
               </ul>
             </li>
 
@@ -75,8 +74,6 @@ Footer.propTypes = {
 Footer.defaultProps = {
   id: 'footer',
   className: 'footer',
-  label: '',
-  lang: 'en',
 };
 
 export default radium(Footer);
