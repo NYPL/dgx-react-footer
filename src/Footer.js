@@ -53,7 +53,7 @@ class Footer extends React.Component {
           <SocialMediaList
             data={data.SocialMedia}
             id="SocialMediaList"
-            className="socialmedia" />
+            className="socialMedia" />
         </div>
 
         <div id="copyright" className="copyright">

@@ -162,7 +162,7 @@ var Footer = (function (_React$Component) {
           _react2['default'].createElement(_componentsSocialMediaListSocialMediaListJs2['default'], {
             data: _footerDataJs2['default'].SocialMedia,
             id: 'SocialMediaList',
-            className: 'socialmedia' })
+            className: 'socialMedia' })
         ),
         _react2['default'].createElement(
           'div',

@@ -1,5 +1,6 @@
+@import 'globals';
+@import 'mixins';
 @import 'viewports';
-@import 'transitions';
 @import 'fonts';
 
 /**
@@ -10,18 +11,15 @@
 $footer-color: #54514A;
 
 .footer {
-  position: relative;
-  clear: both;
-  margin-top: 20px;
   padding: 15px 20px 100px;
   background: $footer-color;
-  color: white;
+  color: #fff;
   font-family: "Kievit-Medium";
   min-height: 280px;
 
   a {
     font-weight: 300;
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
       
     &:hover {
@@ -36,13 +34,13 @@ $footer-color: #54514A;
     top: 15px;
     left: 15px;
 
-    @media (min-width: 768px) {
+    @include min-screen($portrait) {
       font-size: 75px;
       top: 15px;
       left: 15%;
     }
 
-    @media (min-width: 1024px) {
+    @include min-screen($landscape) {
       font-size: 80px;
       left: 13%;
       top: 30px;
@@ -65,38 +63,16 @@ $footer-color: #54514A;
       text-align: right;
 
       ul {
-        list-style: none;
+        @include visuallyHidden;
         padding: 0;
         
-
-        @media (max-width: 768px) {
-          position: absolute;
-          left: -10000px;
-          top: auto;
-          width: 1px;
-          height: 1px;
-          overflow: hidden;
+        @include min-screen($portrait) {
+          @include displayVisuallyHidden;
         }
       }
-      
-      @media (min-width: 768px) {
-        margin: 40px 0 0 0;
-        font-size: 32px;
-        line-height: 74px;
 
-        margin: 0;
-        font-size: 13px;
-        line-height: 25px;
-        text-align: left;
-
-        ul {
-          position: relative;
-          left: 0;
-          height: auto;
-          width: 100%;
-        }
-
-        li {
+      li {
+        @include min-screen($portrait) {
           float: left;
           width: 135px;
 
@@ -104,14 +80,8 @@ $footer-color: #54514A;
             width: 110px;
           }
         }
-      }
 
-      @media screen and (min-width: 1024px) {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 30px;
-
-        li {
+        @include min-screen($landscape) {
           width: 155px;
 
           &:first-child {
@@ -122,12 +92,8 @@ $footer-color: #54514A;
             margin-right: 60px;
           }
         }
-      }
 
-      @media screen and (min-width: 1500px) {
-        margin-right: 50px;
-
-        li {
+        @include min-screen($large) {
           &:first-child,
           &:nth-child(2) {
             width: 155px;
@@ -135,9 +101,29 @@ $footer-color: #54514A;
           }
         }
       }
+
+      // MQs for .footerLinks
+      @include min-screen($portrait) {
+        order: 1;
+        margin: 0;
+        font-size: 13px;
+        line-height: 25px;
+        text-align: left;
+      }
+
+      @include min-screen($landscape) {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+
+      @include min-screen($large) {
+        margin-right: 70px;
+        order: 2;
+      }
     }
     
-    .socialmedia {
+    .socialMedia {
       order: 1;
       margin: 20px 0 15px;
       list-style-type: none;
@@ -164,6 +150,10 @@ $footer-color: #54514A;
             position: absolute;
             width: 1px;
           }
+
+          @include min-screen($portrait) {
+            font-size: 50px;
+          }
         }
 
         [class^="icon-"], 
@@ -178,52 +168,40 @@ $footer-color: #54514A;
         }
       }
 
-      @media (min-width: 768px) {
+      // MQs for .socialMedia
+      @include min-screen($portrait) {
         width: 170px;
         margin-top: 30px;
-
-        a {
-          font-size: 50px;
-        }
       }
         
-      @media (min-width: 1024px) {
-        margin-top: 60px;
+      @include min-screen($landscape) {
+        margin-top: 30px;
       }
 
-      @media screen and (min-width: 1500px) {
+      @include min-screen($large) {
         margin-top: 0;
         width: 280px;
       }
     }
 
-    @media (min-width: 768px) {
-      flex-direction: column-reverse;
+    // MQs for &-content
+    @include min-screen($portrait) {
+      flex-direction: column;
       margin-top: 0;
-
-      flex-direction: column-reverse;
       margin: 0;
       right: 6%;
       position: absolute;
       align-items: flex-end;
     }
 
-    @media screen and (min-width: 1024px) {
+    @include min-screen($landscape) {
       left: 35%;
     }
 
-    @media screen and (min-width: 1500px) {
+    @include min-screen($large) {
       flex-direction: row-reverse;
       align-items: flex-start;
     }
-
-    // @media (min-width: 1100px) {
-    //   flex-direction: row;
-    //   align-items: flex-start;
-    //   position: absolute;
-    //   top: 30px;
-    //   right: 0;
-    // }
   }
 
   .copyright {
@@ -232,27 +210,27 @@ $footer-color: #54514A;
     font-family: "Kievit-Book";
     text-align: right;
 
-    @media (min-width: 768px) {
+    @include min-screen($portrait) {
       font-size: 20px;
-
       position: absolute;
       left: 15%;
       top: 110px;
       font-size: 11px;
     }
 
-    @media screen and (min-width: 1024px) {
+    @include min-screen($landscape) {
       left: 13%;
       top: 140px;
       font-size: 13px;
     }
   }
 
-  @media (min-width: 768px) {
+  // MQs for .footer
+  @include min-screen($portrait) {
     padding: 15px 0;
   }
 
-  @media (min-width: 1024px) {
+  @include min-screen($landscape) {
     padding: 30px 0;
   }
 }
