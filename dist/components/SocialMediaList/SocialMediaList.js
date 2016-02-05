@@ -62,7 +62,6 @@ var SocialMediaList = (function (_React$Component) {
 
 SocialMediaList.propTypes = {
   className: _react2['default'].PropTypes.string.isRequired,
-  name: _react2['default'].PropTypes.string.isRequired,
   link: _react2['default'].PropTypes.string,
   style: _react2['default'].PropTypes.object,
   data: _react2['default'].PropTypes.array

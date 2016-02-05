@@ -31,7 +31,6 @@ class SocialMediaList extends React.Component {
 
 SocialMediaList.propTypes = {
   className: React.PropTypes.string.isRequired,
-  name: React.PropTypes.string.isRequired,
   link: React.PropTypes.string,
   style: React.PropTypes.object,
   data: React.PropTypes.array,
