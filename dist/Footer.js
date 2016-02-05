@@ -52,8 +52,7 @@ var Footer = (function (_React$Component) {
         { id: this.props.id, className: this.props.className },
         _react2['default'].createElement(
           'div',
-          { id: this.props.id + '-content',
-            className: this.props.className + '-content' },
+          { className: this.props.className + '-content' },
           _react2['default'].createElement(
             'ul',
             { className: 'footerLinks' },
@@ -83,16 +82,7 @@ var Footer = (function (_React$Component) {
                   _react2['default'].createElement(
                     'a',
                     { href: '/careers' },
-                    'Careers'
-                  )
-                ),
-                _react2['default'].createElement(
-                  'li',
-                  null,
-                  _react2['default'].createElement(
-                    'a',
-                    { href: '/spacerental' },
-                    'Space Rental'
+                    'Careers at NYPL'
                   )
                 )
               )
@@ -172,7 +162,7 @@ var Footer = (function (_React$Component) {
           _react2['default'].createElement(_componentsSocialMediaListSocialMediaListJs2['default'], {
             data: _footerDataJs2['default'].SocialMedia,
             id: 'SocialMediaList',
-            className: 'socialmedia' })
+            className: 'socialMedia' })
         ),
         _react2['default'].createElement(
           'div',
@@ -199,9 +189,7 @@ Footer.propTypes = {
 
 Footer.defaultProps = {
   id: 'footer',
-  className: 'footer',
-  label: '',
-  lang: 'en'
+  className: 'footer'
 };
 
 exports['default'] = (0, _radium2['default'])(Footer);
