@@ -1,5 +1,6 @@
+@import 'globals';
+@import 'mixins';
 @import 'viewports';
-@import 'transitions';
 @import 'fonts';
 
 /**
@@ -10,22 +11,17 @@
 $footer-color: #54514A;
 
 .footer {
-  position: relative;
-  clear: both;
-  margin-top: 20px;
   padding: 15px 20px 100px;
   background: $footer-color;
-  color: white;
+  color: #fff;
   font-family: "Kievit-Medium";
-  min-height: 400px;
-
-  @media (min-width: 768px) {
-    padding: 30px 20px 100px;
-  }
+  min-height: 280px;
+  position: relative;
+  clear: both;
 
   a {
     font-weight: 300;
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
       
     &:hover {
@@ -40,16 +36,16 @@ $footer-color: #54514A;
     top: 15px;
     left: 15px;
 
-    @media (min-width: 768px) {
-      font-size: 160px;
-      top: 46px;
-      left: 32px;
+    @include min-screen($portrait) {
+      font-size: 75px;
+      top: 15px;
+      left: 15%;
     }
 
-    @media (min-width: 800px) {
+    @include min-screen($landscape) {
       font-size: 80px;
+      left: 13%;
       top: 30px;
-      left: 30px;
     }
   }
 
@@ -59,22 +55,6 @@ $footer-color: #54514A;
     align-items: flex-end;
     margin-top: 75px;
 
-    @media (min-width: 768px) {
-      margin-top: 227px;      
-    }
-
-    @media (min-width: 800px) {
-      margin-top: 0;
-    }	
-
-    @media (min-width: 1100px) {
-      flex-direction: row;
-      align-items: flex-start;
-      position: absolute;
-      top: 30px;
-      right: 0;
-    }
-
     .footerLinks {
       font-size: 16px;
       line-height: 35px;
@@ -83,57 +63,74 @@ $footer-color: #54514A;
       order: 2;
       list-style: none;
       text-align: right;
-		  
-      @media (min-width: 768px) {
-        margin: 40px 0 0 0;
-        font-size: 32px;
-        line-height: 74px;
-      }
-
-      @media (min-width: 800px) {
-        display: flex;
-      	font-size: 16px;
-      	line-height: 30px;
-      	order: 1;
-      	text-align: left;
-      	margin: 0;
-
-  	    li {
-          padding-right: 47px;
-  	    }
-      }
 
       ul {
-        list-style: none;
-  	    padding: 0;
+        @include visuallyHidden;
+        padding: 0;
+        
+        @include min-screen($portrait) {
+          @include displayVisuallyHidden;
+        }
+      }
 
-  	    @media (max-width: 799px) {
-          position: absolute;
-      	  left: -10000px;
-      	  top: auto;
-      	  width: 1px;
-      	  height: 1px;
-      	  overflow: hidden;
-      	}
+      li {
+        @include min-screen($portrait) {
+          float: left;
+          width: 135px;
+
+          &:first-child {
+            width: 110px;
+          }
+        }
+
+        @include min-screen($landscape) {
+          width: 155px;
+
+          &:first-child {
+            margin-right: 110px;
+          }
+
+          &:nth-child(2) {
+            margin-right: 60px;
+          }
+        }
+
+        @include min-screen($large) {
+          &:first-child,
+          &:nth-child(2) {
+            width: 155px;
+            margin-right: 0;
+          }
+        }
+      }
+
+      // MQs for .footerLinks
+      @include min-screen($portrait) {
+        order: 1;
+        margin: 0;
+        font-size: 13px;
+        line-height: 25px;
+        text-align: left;
+      }
+
+      @include min-screen($landscape) {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+
+      @include min-screen($large) {
+        margin-right: 70px;
+        order: 2;
       }
     }
     
-    .socialmedia {
+    .socialMedia {
       order: 1;
       margin: 20px 0 15px;
       list-style-type: none;
-
       // icons are square, we want three across
       width: 45px * 3;
-
-      @media (min-width: 768px) {
-        width: 80px * 3;
-      }
-        
-      @media (min-width: 800px) {
-        order: 2;
-        margin-top: 0;
-      }
 
       li {
         display: inline-block;
@@ -143,14 +140,6 @@ $footer-color: #54514A;
           color: #FFF;
           font-size: 45px;
           text-decoration: none;
-
-          @media (min-width: 768px) {
-            font-size: 80px;
-          }
-
-          @media (min-width: 800px) {
-            font-size: 40px;
-          }
 
           .replaced-text {
             /* h5bp technique */
@@ -162,6 +151,10 @@ $footer-color: #54514A;
             padding: 0;
             position: absolute;
             width: 1px;
+          }
+
+          @include min-screen($portrait) {
+            font-size: 50px;
           }
         }
 
@@ -175,30 +168,71 @@ $footer-color: #54514A;
         [class*=" icon-"]:before {
           margin: 0 5px 0 0 !important;
         }
-      } 
+      }
+
+      // MQs for .socialMedia
+      @include min-screen($portrait) {
+        width: 170px;
+        margin-top: 30px;
+      }
+        
+      @include min-screen($landscape) {
+        margin-top: 30px;
+      }
+
+      @include min-screen($large) {
+        margin-top: 0;
+        width: 280px;
+      }
+    }
+
+    // MQs for &-content
+    @include min-screen($portrait) {
+      flex-direction: column;
+      margin-top: 0;
+      margin: 0;
+      right: 6%;
+      position: absolute;
+      align-items: flex-end;
+    }
+
+    @include min-screen($landscape) {
+      left: 35%;
+    }
+
+    @include min-screen($large) {
+      flex-direction: row-reverse;
+      align-items: flex-start;
     }
   }
 
-
   .copyright {
-    margin: 25px 0 0 0;
+    margin: 35px 0 0 0;
     font-size: 12px;
     font-family: "Kievit-Book";
     text-align: right;
 
-    @media (min-width: 768px) {
-      margin: 40px 0 0 0;
+    @include min-screen($portrait) {
       font-size: 20px;
-      right: 20px;
+      position: absolute;
+      left: 15%;
+      top: 110px;
+      font-size: 11px;
     }
 
-    @media (min-width: 800px) {
-      text-align: left;
-      position: absolute;
-      left: 30px;
-      top: 180px;
-      margin: 0;
+    @include min-screen($landscape) {
+      left: 13%;
+      top: 140px;
       font-size: 13px;
     }
+  }
+
+  // MQs for .footer
+  @include min-screen($portrait) {
+    padding: 15px 0;
+  }
+
+  @include min-screen($landscape) {
+    padding: 30px 0;
   }
 }
