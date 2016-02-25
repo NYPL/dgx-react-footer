@@ -11,12 +11,13 @@
   },
   "scripts": {
     "build": "node_modules/.bin/webpack -p --config webpack.config.js",
-    "babel-build": "babel src -d dist && cp -r src/styles dist",
+    "babel-build": "node_modules/.bin/babel src -d dist && cp -r src/styles dist",
     "start": "NODE_ENV=development node server.js"
   },
   "dependencies": {
-    "react": "^0.13.3",
-    "radium": "^0.13.5"
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "radium": "^0.16.6"
   },
   "devDependencies": {
     "babel": "^5.8.30",
