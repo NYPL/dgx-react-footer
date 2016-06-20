@@ -7,27 +7,18 @@ const styles = {
   ReplacedText: {},
 };
 
-class SocialMediaItem extends React.Component {
-  // Constructor used in ES6
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <li key="SocialMediaNode" id={this.props.name}>
-        <a key="SocialMediaLink"
-          className={this.props.className}
-          style={styles.SocialMediaLink}
-          href={this.props.link}>
-          <span className="replaced-text" style={styles.ReplacedText}>
-            {this.props.name}
-          </span>
-        </a>
-      </li>
-    );
-  }
-}
+const SocialMediaItem = (props) => (
+  <li key="SocialMediaNode" id={props.name}>
+    <a key="SocialMediaLink"
+      className={props.className}
+      style={styles.SocialMediaLink}
+      href={props.link}>
+      <span className="replaced-text" style={styles.ReplacedText}>
+        {props.name}
+      </span>
+    </a>
+  </li>
+);
 
 SocialMediaItem.propTypes = {
   className: React.PropTypes.string.isRequired,
