@@ -1,22 +1,20 @@
 'use strict';
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = require('react-dom');
 
-var _reactDom2 = _interopRequireDefault(_reactDom);
+var _Footer = require('./Footer.js');
 
-var _FooterJs = require('./Footer.js');
-
-var _FooterJs2 = _interopRequireDefault(_FooterJs);
+var _Footer2 = _interopRequireDefault(_Footer);
 
 require('./styles/styles.scss');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* app.jsx
  * Used for local development of React Components
  */
-_reactDom2['default'].render(_react2['default'].createElement(_FooterJs2['default']), document.getElementById('footer'));
+(0, _reactDom.render)(_react2.default.createElement(_Footer2.default, { id: 'footer', className: 'footer' }), document.getElementById('footer'));
