@@ -35,7 +35,7 @@ const Footer = (props) => (
           <a href="/help/about-nypl/legal-notices/rules-and-regulations">Rules & Regulations</a>
           <ul>
             <li>
-              <a href="/help/community-outreach/services-for-persons-with-disabilities">
+              <a href="/accessibility">
                 Accessibility
               </a>
             </li>
