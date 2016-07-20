@@ -5,7 +5,7 @@ import React from 'react';
 import SocialMediaList from './components/SocialMediaList/SocialMediaList.jsx';
 
 // Import static data
-import data from './footerData.js';
+import data from './footerConfig.js';
 
 const Footer = (props) => (
   <footer id={props.id} className={props.className}>
@@ -16,6 +16,7 @@ const Footer = (props) => (
           <ul>
             <li><a href="/help/about-nypl/media-center">Press</a></li>
             <li><a href="/careers">Careers at NYPL</a></li>
+            <li><a href="/spacerental">Space Rental</a></li>
           </ul>
         </li>
 
