@@ -1,19 +1,14 @@
 // Import libraries
 import React from 'react';
-import radium from 'radium';
-
-const styles = {
-  SocialMediaLink: {},
-  ReplacedText: {},
-};
 
 const SocialMediaItem = (props) => (
   <li key="SocialMediaNode" id={props.name}>
-    <a key="SocialMediaLink"
+    <a
+      key="SocialMediaLink"
       className={props.className}
-      style={styles.SocialMediaLink}
-      href={props.link}>
-      <span className="replaced-text" style={styles.ReplacedText}>
+      href={props.link}
+    >
+      <span className="replaced-text">
         {props.name}
       </span>
     </a>
@@ -26,4 +21,4 @@ SocialMediaItem.propTypes = {
   link: React.PropTypes.string,
 };
 
-export default radium(SocialMediaItem);
+export default SocialMediaItem;

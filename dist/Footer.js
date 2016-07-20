@@ -8,11 +8,7 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _radium = require('radium');
-
-var _radium2 = _interopRequireDefault(_radium);
-
-var _SocialMediaList = require('./components/SocialMediaList/SocialMediaList.js');
+var _SocialMediaList = require('./components/SocialMediaList/SocialMediaList.jsx');
 
 var _SocialMediaList2 = _interopRequireDefault(_SocialMediaList);
 
@@ -23,9 +19,6 @@ var _footerData2 = _interopRequireDefault(_footerData);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Import components
-// Import libraries
-
-
 var Footer = function Footer(props) {
   return _react2.default.createElement(
     'footer',
@@ -142,7 +135,8 @@ var Footer = function Footer(props) {
       _react2.default.createElement(_SocialMediaList2.default, {
         data: _footerData2.default.SocialMedia,
         id: 'SocialMediaList',
-        className: 'socialMedia' })
+        className: 'socialMedia'
+      })
     ),
     _react2.default.createElement(
       'div',
@@ -158,6 +152,10 @@ var Footer = function Footer(props) {
   );
 };
 
+// Import static data
+// Import libraries
+
+
 Footer.propTypes = {
   id: _react2.default.PropTypes.string,
   className: _react2.default.PropTypes.string
@@ -168,4 +166,4 @@ Footer.defaultProps = {
   className: 'footer'
 };
 
-exports.default = (0, _radium2.default)(Footer);
+exports.default = Footer;

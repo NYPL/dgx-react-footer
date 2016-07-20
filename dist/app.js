@@ -6,7 +6,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = require('react-dom');
 
-var _Footer = require('./Footer.js');
+var _Footer = require('./Footer.jsx');
 
 var _Footer2 = _interopRequireDefault(_Footer);
 

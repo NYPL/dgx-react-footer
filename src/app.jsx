@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Footer from './Footer.js';
+import Footer from './Footer.jsx';
  
 import './styles/styles.scss';
 

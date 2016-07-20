@@ -1,10 +1,10 @@
 // Import libraries
 import React from 'react';
-import radium from 'radium';
 
 // Import components
-import SocialMediaList from './components/SocialMediaList/SocialMediaList.js';
+import SocialMediaList from './components/SocialMediaList/SocialMediaList.jsx';
 
+// Import static data
 import data from './footerData.js';
 
 const Footer = (props) => (
@@ -46,7 +46,8 @@ const Footer = (props) => (
       <SocialMediaList
         data={data.SocialMedia}
         id="SocialMediaList"
-        className="socialMedia" />
+        className="socialMedia"
+      />
     </div>
 
     <div id="copyright" className="copyright">
@@ -67,4 +68,4 @@ Footer.defaultProps = {
   className: 'footer',
 };
 
-export default radium(Footer);
+export default Footer;
