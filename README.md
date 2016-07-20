@@ -24,7 +24,7 @@ $ NODE_ENV=development|qa|production npm start // Starts localhost:3000 with set
 ```
 
 ### Production Mode
-We use Webpack to fire off a hot-reloading development server. This allows for continous code changes without the need to refresh your browser.
+We use Webpack to fire off a production server.
 
 ```sh
 $ npm run babel-build // Builds dist path & files
