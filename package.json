@@ -15,7 +15,6 @@
     "start": "NODE_ENV=development node server.js"
   },
   "dependencies": {
-    "radium": "0.14.3"
   },
   "devDependencies": {
     "babel-core": "6.7.2",
