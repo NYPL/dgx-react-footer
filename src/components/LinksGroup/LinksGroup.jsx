@@ -16,8 +16,7 @@ const renderLinkItems = (data) => {
 
 const LinksGroup = ({ data }) => (
   <li>
-    <a href={data[0].link}>{data[0].name}</a>
-    <ul>
+    <ul className="linkItemList">
       {renderLinkItems(data)}
     </ul>
   </li>
