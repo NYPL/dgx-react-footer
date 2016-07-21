@@ -13,7 +13,7 @@ const Footer = (props) => (
     <div className={`${props.className}-content`}>
       <FooterLinks
         className="footerLinks"
-        data={footerConfig.nyplLinks} 
+        data={footerConfig.nyplLinks}
       />
       <SocialMediaList
         data={footerConfig.socialMedia}
