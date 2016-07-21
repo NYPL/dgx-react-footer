@@ -2,50 +2,23 @@
 import React from 'react';
 
 // Import components
+import LinksGroup from './components/LinksGroup/LinksGroup.jsx';
 import SocialMediaList from './components/SocialMediaList/SocialMediaList.jsx';
 
 // Import static data
-import data from './footerConfig.js';
+import footerConfig from './footerConfig.js';
 
 const Footer = (props) => (
   <footer id={props.id} className={props.className}>
     <div className={`${props.className}-content`}>
       <ul className="footerLinks">
-        <li>
-          <a href="/help/about-nypl">About NYPL</a>
-          <ul>
-            <li><a href="/help/about-nypl/media-center">Press</a></li>
-            <li><a href="/careers">Careers at NYPL</a></li>
-            <li><a href="/spacerental">Space Rental</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="/help/about-nypl/legal-notices/privacy-policy">Privacy Policy</a>
-          <ul>
-            <li><a href="/policies">Other Policies</a></li>
-            <li><a href="/terms-conditions">Terms & Conditions</a></li>
-            <li>
-              <a href="/help/about-nypl/leadership/board-trustees">Governance</a>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="/help/about-nypl/legal-notices/rules-and-regulations">Rules & Regulations</a>
-          <ul>
-            <li>
-              <a href="/accessibility">
-                Accessibility
-              </a>
-            </li>
-            <li><a href="/language">Language</a></li>
-          </ul>
-        </li>
+        <LinksGroup data={footerConfig.column01} />
+        <LinksGroup data={footerConfig.column02} />
+        <LinksGroup data={footerConfig.column03} />
       </ul>
 
       <SocialMediaList
-        data={data.SocialMedia}
+        data={footerConfig.socialMedia}
         id="SocialMediaList"
         className="socialMedia"
       />
