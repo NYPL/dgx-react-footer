@@ -8,17 +8,21 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _FooterLinks = require('./components/FooterLinks/FooterLinks.jsx');
+
+var _FooterLinks2 = _interopRequireDefault(_FooterLinks);
+
 var _SocialMediaList = require('./components/SocialMediaList/SocialMediaList.jsx');
 
 var _SocialMediaList2 = _interopRequireDefault(_SocialMediaList);
 
-var _footerData = require('./footerData.js');
+var _footerConfig = require('./footerConfig.js');
 
-var _footerData2 = _interopRequireDefault(_footerData);
+var _footerConfig2 = _interopRequireDefault(_footerConfig);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Import components
+// Import libraries
 var Footer = function Footer(props) {
   return _react2.default.createElement(
     'footer',
@@ -26,114 +30,12 @@ var Footer = function Footer(props) {
     _react2.default.createElement(
       'div',
       { className: props.className + '-content' },
-      _react2.default.createElement(
-        'ul',
-        { className: 'footerLinks' },
-        _react2.default.createElement(
-          'li',
-          null,
-          _react2.default.createElement(
-            'a',
-            { href: '/help/about-nypl' },
-            'About NYPL'
-          ),
-          _react2.default.createElement(
-            'ul',
-            null,
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '/help/about-nypl/media-center' },
-                'Press'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '/careers' },
-                'Careers at NYPL'
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          _react2.default.createElement(
-            'a',
-            { href: '/help/about-nypl/legal-notices/privacy-policy' },
-            'Privacy Policy'
-          ),
-          _react2.default.createElement(
-            'ul',
-            null,
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '/policies' },
-                'Other Policies'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '/terms-conditions' },
-                'Terms & Conditions'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '/help/about-nypl/leadership/board-trustees' },
-                'Governance'
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          _react2.default.createElement(
-            'a',
-            { href: '/help/about-nypl/legal-notices/rules-and-regulations' },
-            'Rules & Regulations'
-          ),
-          _react2.default.createElement(
-            'ul',
-            null,
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '/help/community-outreach/services-for-persons-with-disabilities' },
-                'Accessibility'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '/language' },
-                'Language'
-              )
-            )
-          )
-        )
-      ),
+      _react2.default.createElement(_FooterLinks2.default, {
+        className: 'footerLinks',
+        data: _footerConfig2.default.nyplLinks
+      }),
       _react2.default.createElement(_SocialMediaList2.default, {
-        data: _footerData2.default.SocialMedia,
+        data: _footerConfig2.default.socialMedia,
         id: 'SocialMediaList',
         className: 'socialMedia'
       })
@@ -153,7 +55,9 @@ var Footer = function Footer(props) {
 };
 
 // Import static data
-// Import libraries
+
+
+// Import components
 
 
 Footer.propTypes = {
