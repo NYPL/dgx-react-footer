@@ -4,31 +4,27 @@ import { map as _map } from 'underscore';
 
 import SocialMediaItem from './../SocialMediaItem/SocialMediaItem.jsx';
 
-const renderSocialMediaItems = (data, i) => {
-  _map(data, (item) => 
+const renderSocialMediaItems = (data) =>
+  _map(data, (item, i) =>
     <SocialMediaItem
+      className={item.className}
       name={item.name}
       link={item.link}
-      className={item.className}
       key={i}
     />
   );
-};
 
-const SocialMediaList = (data, id, className) => {
-  return (
-    <ul 
-      id={id}
-      className={className}
-    >
-      {renderSocialMediaItems(data)}
-    </ul>
-  );
-};
+const SocialMediaList = ({ data, id, className }) =>
+  <ul
+    id={id}
+    className={className}
+  >
+    {renderSocialMediaItems(data)}
+  </ul>;
 
 SocialMediaList.propTypes = {
   className: React.PropTypes.string.isRequired,
-  link: React.PropTypes.string,
+  id: React.PropTypes.string,
   data: React.PropTypes.array,
 };
 

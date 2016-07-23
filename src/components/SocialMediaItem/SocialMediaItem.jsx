@@ -1,23 +1,21 @@
 // Import libraries
 import React from 'react';
 
-const SocialMediaItem = (props) => (
-  <li key="SocialMediaNode" id={props.name}>
+const SocialMediaItem = ({ className, name, link }) =>
+  <li id={name}>
     <a
-      key="SocialMediaLink"
-      className={props.className}
-      href={props.link}
+      className={className}
+      href={link}
     >
       <span className="replaced-text">
-        {props.name}
+        {name}
       </span>
     </a>
-  </li>
-);
+  </li>;
 
 SocialMediaItem.propTypes = {
-  className: React.PropTypes.string.isRequired,
-  name: React.PropTypes.string.isRequired,
+  className: React.PropTypes.string,
+  name: React.PropTypes.string,
   link: React.PropTypes.string,
 };
 
