@@ -43,7 +43,7 @@ var SocialMediaList = function SocialMediaList(_ref) {
 };
 
 SocialMediaList.propTypes = {
-  className: _react2.default.PropTypes.string.isRequired,
+  className: _react2.default.PropTypes.string,
   id: _react2.default.PropTypes.string,
   data: _react2.default.PropTypes.array
 };

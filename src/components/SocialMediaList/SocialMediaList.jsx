@@ -23,7 +23,7 @@ const SocialMediaList = ({ data, id, className }) =>
   </ul>;
 
 SocialMediaList.propTypes = {
-  className: React.PropTypes.string.isRequired,
+  className: React.PropTypes.string,
   id: React.PropTypes.string,
   data: React.PropTypes.array,
 };
