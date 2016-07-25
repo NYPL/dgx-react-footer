@@ -2,7 +2,7 @@
 import React from 'react';
 import { map as _map } from 'underscore';
 
-import SocialMediaItem from './../SocialMediaItem/SocialMediaItem.jsx';
+import SocialMediaItem from './../SocialMediaItem/SocialMediaItem.js';
 
 const renderSocialMediaItems = (data) =>
   _map(data, (item, i) =>

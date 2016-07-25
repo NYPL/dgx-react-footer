@@ -10,7 +10,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _underscore = require('underscore');
 
-var _LinksGroup = require('./../LinksGroup/LinksGroup.jsx');
+var _LinksGroup = require('./../LinksGroup/LinksGroup.js');
 
 var _LinksGroup2 = _interopRequireDefault(_LinksGroup);
 
