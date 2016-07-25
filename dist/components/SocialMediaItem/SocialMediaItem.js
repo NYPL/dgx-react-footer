@@ -10,21 +10,23 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var SocialMediaItem = function SocialMediaItem(props) {
+var SocialMediaItem = function SocialMediaItem(_ref) {
+  var className = _ref.className;
+  var name = _ref.name;
+  var link = _ref.link;
   return _react2.default.createElement(
     "li",
-    { key: "SocialMediaNode", id: props.name },
+    { id: name },
     _react2.default.createElement(
       "a",
       {
-        key: "SocialMediaLink",
-        className: props.className,
-        href: props.link
+        className: className,
+        href: link
       },
       _react2.default.createElement(
         "span",
         { className: "replaced-text" },
-        props.name
+        name
       )
     )
   );
@@ -32,8 +34,8 @@ var SocialMediaItem = function SocialMediaItem(props) {
 
 
 SocialMediaItem.propTypes = {
-  className: _react2.default.PropTypes.string.isRequired,
-  name: _react2.default.PropTypes.string.isRequired,
+  className: _react2.default.PropTypes.string,
+  name: _react2.default.PropTypes.string,
   link: _react2.default.PropTypes.string
 };
 

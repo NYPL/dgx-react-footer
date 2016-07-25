@@ -1,28 +1,30 @@
 // Import libraries
 import React from 'react';
+import { map as _map } from 'underscore';
 
 import SocialMediaItem from './../SocialMediaItem/SocialMediaItem.jsx';
 
-const SocialMediaList = (props) => {
-  const socialMediaItems = props.data.map((node, i) =>
+const renderSocialMediaItems = (data) =>
+  _map(data, (item, i) =>
     <SocialMediaItem
-      name={node.name}
-      link={node.link}
-      className={node.className}
+      className={item.className}
+      name={item.name}
+      link={item.link}
       key={i}
     />
   );
 
-  return (
-    <ul className={props.className}>
-      {socialMediaItems}
-    </ul>
-  );
-};
+const SocialMediaList = ({ data, id, className }) =>
+  <ul
+    id={id}
+    className={className}
+  >
+    {renderSocialMediaItems(data)}
+  </ul>;
 
 SocialMediaList.propTypes = {
-  className: React.PropTypes.string.isRequired,
-  link: React.PropTypes.string,
+  className: React.PropTypes.string,
+  id: React.PropTypes.string,
   data: React.PropTypes.array,
 };
 
