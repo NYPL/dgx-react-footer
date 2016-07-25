@@ -11,13 +11,13 @@
   },
   "scripts": {
     "build": "node_modules/.bin/webpack -p --config webpack.config.js",
-    "babel-build": "node_modules/.bin/babel src -d dist && cp -r src/styles dist",
+    "babel-build": "node_modules/.bin/babel -d dist src && cp -r src/styles dist",
     "start": "NODE_ENV=development node server.js"
   },
   "dependencies": {
-    "radium": "0.14.3"
   },
   "devDependencies": {
+    "babel-cli": "6.11.4",
     "babel-core": "6.7.2",
     "babel-loader": "6.2.4",
     "babel-preset-es2015": "6.6.0",
@@ -27,10 +27,12 @@
     "extract-text-webpack-plugin": "1.0.1",
     "node-sass": "3.4.2",
     "react": "0.14.8",
+    "react-a11y": "^0.3.3",
     "react-dom": "0.14.8",
     "react-hot-loader": "1.3.0",
     "sass-loader": "3.2.0",
     "style-loader": "0.13.0",
+    "underscore": "^1.8.3",
     "webpack": "1.12.14",
     "webpack-dev-server": "1.14.1"
   }

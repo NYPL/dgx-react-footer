@@ -23,7 +23,7 @@ $footer-color: #54514A;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-      
+
     &:hover {
       text-decoration: underline;
     }
@@ -63,14 +63,28 @@ $footer-color: #54514A;
       order: 2;
       list-style: none;
       text-align: right;
+      width: 100%;
+
+      @include min-screen($portrait) {
+        width: auto;
+      }
+
+      .linkItemList {
+        li {
+          @include visuallyHidden;
+
+          &:first-child {
+            @include displayVisuallyHidden;
+          }
+
+          @include min-screen($portrait) {
+            @include displayVisuallyHidden;
+          }
+        }
+      }
 
       ul {
-        @include visuallyHidden;
         padding: 0;
-        
-        @include min-screen($portrait) {
-          @include displayVisuallyHidden;
-        }
       }
 
       li {
@@ -124,12 +138,13 @@ $footer-color: #54514A;
         order: 2;
       }
     }
-    
+
     .socialMedia {
       order: 1;
-      margin: 20px 0 15px;
+      margin: 20px -6px 15px 0;
       list-style-type: none;
       // icons are square, we want three across
+      text-align: right;
       width: 45px * 3;
 
       li {
@@ -138,7 +153,8 @@ $footer-color: #54514A;
         a {
           display: block;
           color: #FFF;
-          font-size: 45px;
+          font-size: 40px;
+          line-height: 45px;
           text-decoration: none;
 
           .replaced-text {
@@ -158,13 +174,13 @@ $footer-color: #54514A;
           }
         }
 
-        [class^="icon-"], 
+        [class^="icon-"],
         [class*=" icon-"] {
           padding: 0;
         }
-          
-        [data-icon]:before, 
-        [class^="icon-"]:before, 
+
+        [data-icon]:before,
+        [class^="icon-"]:before,
         [class*=" icon-"]:before {
           margin: 0 5px 0 0 !important;
         }
@@ -175,7 +191,7 @@ $footer-color: #54514A;
         width: 170px;
         margin-top: 30px;
       }
-        
+
       @include min-screen($landscape) {
         margin-top: 30px;
       }

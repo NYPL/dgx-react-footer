@@ -22,7 +22,7 @@ if (process.env.NODE_ENV !== 'development') {
         {
           test: /\.jsx?$/,
           exclude: /(node_modules|bower_components)/,
-          loaders: ['babel']
+          loaders: ['babel-loader']
         },
         {
           test: /\.scss$/,
@@ -66,7 +66,7 @@ if (process.env.NODE_ENV !== 'development') {
         {
           test: /\.jsx?$/,
           exclude: /(node_modules|bower_components)/,
-          loaders: ['react-hot', 'babel']
+          loaders: ['react-hot', 'babel-loader']
         },
         {
           test: /\.scss$/,
