@@ -2,7 +2,7 @@
 import React from 'react';
 import { map as _map } from 'underscore';
 
-import LinksGroup from './../LinksGroup/LinksGroup.jsx';
+import LinksGroup from './../LinksGroup/LinksGroup.js';
 
 const renderLinksGroups = (data) =>
   _map(data, (item, i) =>
