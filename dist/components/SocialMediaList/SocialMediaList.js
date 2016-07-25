@@ -10,7 +10,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _underscore = require('underscore');
 
-var _SocialMediaItem = require('./../SocialMediaItem/SocialMediaItem.jsx');
+var _SocialMediaItem = require('./../SocialMediaItem/SocialMediaItem.js');
 
 var _SocialMediaItem2 = _interopRequireDefault(_SocialMediaItem);
 

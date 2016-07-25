@@ -8,11 +8,11 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _FooterLinks = require('./components/FooterLinks/FooterLinks.jsx');
+var _FooterLinks = require('./components/FooterLinks/FooterLinks.js');
 
 var _FooterLinks2 = _interopRequireDefault(_FooterLinks);
 
-var _SocialMediaList = require('./components/SocialMediaList/SocialMediaList.jsx');
+var _SocialMediaList = require('./components/SocialMediaList/SocialMediaList.js');
 
 var _SocialMediaList2 = _interopRequireDefault(_SocialMediaList);
 
