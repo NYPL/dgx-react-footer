@@ -25,4 +25,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /* app.jsx
  * Used for local development of React Components
  */
-_reactDom2.default.render(_react2.default.createElement(_Footer2.default, { id: 'footer', className: 'footer' }), document.getElementById('footer'));
+_reactDom2.default.render(_react2.default.createElement(_Footer2.default, { id: 'footer', className: 'footer' }), document.getElementById('footerPreview'));

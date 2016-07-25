@@ -11,4 +11,4 @@ a11y(React, { ReactDOM, includeSrcNode: true });
 /* app.jsx
  * Used for local development of React Components
  */
-ReactDOM.render(<Footer id="footer" className="footer" />, document.getElementById('footer'));
+ReactDOM.render(<Footer id="footer" className="footer" />, document.getElementById('footerPreview'));
