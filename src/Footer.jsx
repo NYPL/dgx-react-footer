@@ -2,8 +2,8 @@
 import React from 'react';
 
 // Import components
-import FooterLinks from './components/FooterLinks/FooterLinks.jsx';
-import SocialMediaList from './components/SocialMediaList/SocialMediaList.jsx';
+import FooterLinks from './components/FooterLinks/FooterLinks.js';
+import SocialMediaList from './components/SocialMediaList/SocialMediaList.js';
 
 // Import static data
 import footerConfig from './footerConfig.js';
