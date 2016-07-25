@@ -6,7 +6,7 @@ import './styles/styles.scss';
 
 import a11y from 'react-a11y';
 
-a11y(React, { ReactDOM: ReactDOM , includeSrcNode: true });
+a11y(React, { ReactDOM, includeSrcNode: true });
 
 /* app.jsx
  * Used for local development of React Components
