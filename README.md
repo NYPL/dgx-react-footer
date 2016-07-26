@@ -3,7 +3,7 @@
 This repository is the footer component for the ReactJS applications of nypl.org.
 
 ### Version
-0.2.0
+0.2.1
 
 ### Installation
 Install all dependencies listed under package.json
