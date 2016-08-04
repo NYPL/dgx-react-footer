@@ -1,8 +1,8 @@
 // Import libraries
 import React from 'react';
 
-const SocialMediaItem = ({ className, name, link }) =>
-  <li id={name}>
+const SocialMediaItem = ({ id, className, name, link }) =>
+  <li id={id}>
     <a
       className={className}
       href={link}

@@ -19,6 +19,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var renderSocialMediaItems = function renderSocialMediaItems(data) {
   return (0, _underscore.map)(data, function (item, i) {
     return _react2.default.createElement(_SocialMediaItem2.default, {
+      id: item.id,
       className: item.className,
       name: item.name,
       link: item.link,

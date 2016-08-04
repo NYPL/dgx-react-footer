@@ -29,18 +29,23 @@ var data = {
   }]],
   socialMedia: [{ name: 'NYPL on Facebook',
     link: 'https://www.facebook.com/nypl',
+    id: 'nypl-icon-facebook',
     className: 'nypl-icon-facebook'
   }, { name: 'NYPL on Twitter',
     link: 'https://twitter.com/nypl',
+    id: 'nypl-icon-twitter',
     className: 'nypl-icon-twitter'
   }, { name: 'NYPL on Instagram',
     link: 'https://instagram.com/nypl',
+    id: 'nypl-icon-instagram',
     className: 'nypl-icon-instagram'
   }, { name: 'NYPL on Tumblr',
     link: 'https://nypl.tumblr.com/',
+    id: 'nypl-icon-tumblr',
     className: 'nypl-icon-tumblr'
   }, { name: 'NYPL on Youtube',
     link: 'https://www.youtube.com/user/NewYorkPublicLibrary',
+    id: 'nypl-icon-youtube',
     className: 'nypl-icon-youtube'
   }]
 };

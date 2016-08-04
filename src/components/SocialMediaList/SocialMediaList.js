@@ -7,6 +7,7 @@ import SocialMediaItem from './../SocialMediaItem/SocialMediaItem.js';
 const renderSocialMediaItems = (data) =>
   _map(data, (item, i) =>
     <SocialMediaItem
+      id={item.id}
       className={item.className}
       name={item.name}
       link={item.link}
