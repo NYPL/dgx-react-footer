@@ -11,7 +11,6 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SocialMediaItem = function SocialMediaItem(_ref) {
-  var id = _ref.id;
   var className = _ref.className;
   var name = _ref.name;
   var link = _ref.link;
