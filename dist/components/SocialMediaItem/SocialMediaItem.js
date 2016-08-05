@@ -16,7 +16,7 @@ var SocialMediaItem = function SocialMediaItem(_ref) {
   var link = _ref.link;
   return _react2.default.createElement(
     "li",
-    { id: name },
+    null,
     _react2.default.createElement(
       "a",
       {
