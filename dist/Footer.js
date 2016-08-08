@@ -26,7 +26,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Footer = function Footer(props) {
   return _react2.default.createElement(
     'footer',
-    { id: props.id, className: props.className },
+    { id: props.id, className: props.className, role: 'contentinfo' },
     _react2.default.createElement(
       'div',
       { className: props.className + '-content' },
