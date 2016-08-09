@@ -9,7 +9,7 @@ import SocialMediaList from './components/SocialMediaList/SocialMediaList.js';
 import footerConfig from './footerConfig.js';
 
 const Footer = (props) => (
-  <footer id={props.id} className={props.className}>
+  <footer id={props.id} className={props.className} role="contentinfo">
     <div className={`${props.className}-content`}>
       <FooterLinks
         className="footerLinks"
