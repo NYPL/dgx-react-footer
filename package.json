@@ -1,5 +1,5 @@
 {
-  "name": "dgx-react-footer",
+  "name": "@nypl/dgx-react-footer",
   "description": "NYPl React Footer",
   "author": "NYPL Digital Experience",
   "contributors": [
@@ -20,7 +20,7 @@
       "email": "seanredmond@nypl.org"
     }
   ],
-  "version": "0.2.7",
+  "version": "0.3.0",
   "main": "dist/Footer.js",
   "license": "MIT",
   "repository": {
