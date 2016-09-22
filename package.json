@@ -1,8 +1,26 @@
 {
   "name": "dgx-react-footer",
   "description": "NYPl React Footer",
-  "author": "Sean Redmond <seanredmond@nypl.org>",
-  "version": "0.0.1",
+  "author": "NYPL Digital Experience",
+  "contributors": [
+    {
+      "name": "Edwin Guzman",
+      "email": "edwinguzman@nypl.org"
+    },
+    {
+      "name": "Rafael Hernandez",
+      "email": "rafaelhernandez@nypl.org"
+    },
+    {
+      "name": "Kang Peng",
+      "email": "kangtingpeng@nypl.org"
+    },
+    {
+      "name": "Sean Redmond",
+      "email": "seanredmond@nypl.org"
+    }
+  ],
+  "version": "0.2.7",
   "main": "dist/Footer.js",
   "license": "MIT",
   "repository": {
