@@ -1,11 +1,9 @@
-// Import libraries
 import React from 'react';
-import { map as _map } from 'underscore';
-
-import SocialMediaItem from './../SocialMediaItem/SocialMediaItem.js';
+import PropTypes from 'prop-types';
+import SocialMediaItem from './../SocialMediaItem/SocialMediaItem';
 
 const renderSocialMediaItems = (data) =>
-  _map(data, (item, i) =>
+  data.map((item, i) =>
     <SocialMediaItem
       className={item.className}
       name={item.name}
@@ -23,9 +21,9 @@ const SocialMediaList = ({ data, id, className }) =>
   </ul>;
 
 SocialMediaList.propTypes = {
-  className: React.PropTypes.string,
-  id: React.PropTypes.string,
-  data: React.PropTypes.array,
+  className: PropTypes.string,
+  id: PropTypes.string,
+  data: PropTypes.array,
 };
 
 export default SocialMediaList;

@@ -1,9 +1,8 @@
-// Import libraries
 import React from 'react';
-import { map as _map } from 'underscore';
+import PropTypes from 'prop-types';
 
 const renderLinkItems = (data) =>
-  _map(data, (item, i) =>
+  data.map((item, i) =>
     <li key={i}>
       <a href={item.link}>
         {item.name}
@@ -20,7 +19,7 @@ const LinksGroup = ({ data }) => (
 );
 
 LinksGroup.propTypes = {
-  data: React.PropTypes.array,
+  data: PropTypes.array,
 };
 
 export default LinksGroup;

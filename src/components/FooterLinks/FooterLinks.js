@@ -1,11 +1,10 @@
 // Import libraries
 import React from 'react';
-import { map as _map } from 'underscore';
-
-import LinksGroup from './../LinksGroup/LinksGroup.js';
+import PropTypes from 'prop-types';
+import LinksGroup from './../LinksGroup/LinksGroup';
 
 const renderLinksGroups = (data) =>
-  _map(data, (item, i) =>
+  data.map((item, i) =>
     <LinksGroup data={item} key={i} />
   );
 
@@ -16,8 +15,8 @@ const FooterLinks = ({ data, className }) => (
 );
 
 FooterLinks.propTypes = {
-  data: React.PropTypes.array,
-  className: React.PropTypes.string,
+  data: PropTypes.array,
+  className: PropTypes.string,
 };
 
 export default FooterLinks;

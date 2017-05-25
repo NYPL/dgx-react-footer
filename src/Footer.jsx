@@ -1,12 +1,11 @@
 // Import libraries
 import React from 'react';
-
+import PropTypes from 'prop-types';
 // Import components
-import FooterLinks from './components/FooterLinks/FooterLinks.js';
-import SocialMediaList from './components/SocialMediaList/SocialMediaList.js';
-
+import FooterLinks from './components/FooterLinks/FooterLinks';
+import SocialMediaList from './components/SocialMediaList/SocialMediaList';
 // Import static data
-import footerConfig from './footerConfig.js';
+import footerConfig from './footerConfig';
 
 const Footer = (props) => (
   <footer id={props.id} className={props.className} role="contentinfo">
@@ -29,8 +28,8 @@ const Footer = (props) => (
 );
 
 Footer.propTypes = {
-  id: React.PropTypes.string,
-  className: React.PropTypes.string,
+  id: PropTypes.string,
+  className: PropTypes.string,
 };
 
 Footer.defaultProps = {
