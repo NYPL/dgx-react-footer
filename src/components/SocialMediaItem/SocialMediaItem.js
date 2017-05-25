@@ -2,7 +2,7 @@
 import React from 'react';
 
 const SocialMediaItem = ({ className, name, link }) =>
-  <li id={name}>
+  <li>
     <a
       className={className}
       href={link}

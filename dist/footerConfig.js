@@ -8,7 +8,7 @@ var data = {
     link: '/help/about-nypl'
   }, { name: 'Press',
     link: '/help/about-nypl/media-center'
-  }, { name: 'Careers at NYPL',
+  }, { name: 'Careers',
     link: '/careers'
   }, { name: 'Space Rental',
     link: '/spacerental'
