@@ -56,11 +56,6 @@ var Footer = function Footer(props) {
     _react2.default.createElement('span', { className: 'logoText nypl-icon-logo-type' })
   );
 };
-// Import static data
-
-// Import components
-// Import libraries
-
 
 Footer.propTypes = {
   id: _propTypes2.default.string,

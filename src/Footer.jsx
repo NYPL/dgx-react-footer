@@ -1,10 +1,7 @@
-// Import libraries
 import React from 'react';
 import PropTypes from 'prop-types';
-// Import components
 import FooterLinks from './components/FooterLinks/FooterLinks';
 import SocialMediaList from './components/SocialMediaList/SocialMediaList';
-// Import static data
 import footerConfig from './footerConfig';
 
 const Footer = (props) => (
