@@ -8,16 +8,18 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _underscore = require('underscore');
+var _propTypes = require('prop-types');
 
-var _SocialMediaItem = require('./../SocialMediaItem/SocialMediaItem.js');
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _SocialMediaItem = require('./../SocialMediaItem/SocialMediaItem');
 
 var _SocialMediaItem2 = _interopRequireDefault(_SocialMediaItem);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var renderSocialMediaItems = function renderSocialMediaItems(data) {
-  return (0, _underscore.map)(data, function (item, i) {
+  return data.map(function (item, i) {
     return _react2.default.createElement(_SocialMediaItem2.default, {
       className: item.className,
       name: item.name,
@@ -25,13 +27,12 @@ var renderSocialMediaItems = function renderSocialMediaItems(data) {
       key: i
     });
   });
-}; // Import libraries
-
+};
 
 var SocialMediaList = function SocialMediaList(_ref) {
-  var data = _ref.data;
-  var id = _ref.id;
-  var className = _ref.className;
+  var data = _ref.data,
+      id = _ref.id,
+      className = _ref.className;
   return _react2.default.createElement(
     'ul',
     {
@@ -43,9 +44,9 @@ var SocialMediaList = function SocialMediaList(_ref) {
 };
 
 SocialMediaList.propTypes = {
-  className: _react2.default.PropTypes.string,
-  id: _react2.default.PropTypes.string,
-  data: _react2.default.PropTypes.array
+  className: _propTypes2.default.string,
+  id: _propTypes2.default.string,
+  data: _propTypes2.default.array
 };
 
 exports.default = SocialMediaList;

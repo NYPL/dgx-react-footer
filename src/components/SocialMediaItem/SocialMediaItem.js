@@ -1,5 +1,5 @@
-// Import libraries
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const SocialMediaItem = ({ className, name, link }) =>
   <li>
@@ -14,9 +14,9 @@ const SocialMediaItem = ({ className, name, link }) =>
   </li>;
 
 SocialMediaItem.propTypes = {
-  className: React.PropTypes.string,
-  name: React.PropTypes.string,
-  link: React.PropTypes.string,
+  className: PropTypes.string,
+  name: PropTypes.string,
+  link: PropTypes.string,
 };
 
 export default SocialMediaItem;

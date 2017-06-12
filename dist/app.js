@@ -8,15 +8,15 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Footer = require('./Footer.jsx');
+var _reactA11y = require('react-a11y');
+
+var _reactA11y2 = _interopRequireDefault(_reactA11y);
+
+var _Footer = require('./Footer');
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
 require('./styles/styles.scss');
-
-var _reactA11y = require('react-a11y');
-
-var _reactA11y2 = _interopRequireDefault(_reactA11y);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

@@ -8,13 +8,14 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _underscore = require('underscore');
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Import libraries
 var renderLinkItems = function renderLinkItems(data) {
-  return (0, _underscore.map)(data, function (item, i) {
+  return data.map(function (item, i) {
     return _react2.default.createElement(
       'li',
       { key: i },
@@ -41,7 +42,7 @@ var LinksGroup = function LinksGroup(_ref) {
 };
 
 LinksGroup.propTypes = {
-  data: _react2.default.PropTypes.array
+  data: _propTypes2.default.array
 };
 
 exports.default = LinksGroup;
