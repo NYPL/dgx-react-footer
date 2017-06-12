@@ -8,21 +8,24 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _FooterLinks = require('./components/FooterLinks/FooterLinks.js');
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _FooterLinks = require('./components/FooterLinks/FooterLinks');
 
 var _FooterLinks2 = _interopRequireDefault(_FooterLinks);
 
-var _SocialMediaList = require('./components/SocialMediaList/SocialMediaList.js');
+var _SocialMediaList = require('./components/SocialMediaList/SocialMediaList');
 
 var _SocialMediaList2 = _interopRequireDefault(_SocialMediaList);
 
-var _footerConfig = require('./footerConfig.js');
+var _footerConfig = require('./footerConfig');
 
 var _footerConfig2 = _interopRequireDefault(_footerConfig);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Import libraries
 var Footer = function Footer(props) {
   return _react2.default.createElement(
     'footer',
@@ -46,7 +49,7 @@ var Footer = function Footer(props) {
       _react2.default.createElement(
         'p',
         null,
-        '© The New York Public Library, ',
+        '\xA9 The New York Public Library, ',
         new Date().getFullYear()
       )
     ),
@@ -54,15 +57,9 @@ var Footer = function Footer(props) {
   );
 };
 
-// Import static data
-
-
-// Import components
-
-
 Footer.propTypes = {
-  id: _react2.default.PropTypes.string,
-  className: _react2.default.PropTypes.string
+  id: _propTypes2.default.string,
+  className: _propTypes2.default.string
 };
 
 Footer.defaultProps = {
