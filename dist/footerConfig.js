@@ -4,8 +4,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var data = {
-  nyplLinks: [[{ name: 'About NYPL',
-    link: '/help/about-nypl'
+  nyplLinks: [[{ name: 'Accessibility',
+    link: '/accessibility'
   }, { name: 'Press',
     link: '/help/about-nypl/media-center'
   }, { name: 'Careers',
@@ -22,8 +22,8 @@ var data = {
     link: '/help/about-nypl/leadership/board-trustees'
   }], [{ name: 'Rules & Regulations',
     link: '/help/about-nypl/legal-notices/rules-and-regulations'
-  }, { name: 'Accessibility',
-    link: '/accessibility'
+  }, { name: 'About NYPL',
+    link: '/help/about-nypl'
   }, { name: 'Language',
     link: '/language'
   }]],

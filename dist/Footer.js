@@ -49,7 +49,7 @@ var Footer = function Footer(props) {
       _react2.default.createElement(
         'p',
         null,
-        '\xA9 The New York Public Library, ',
+        '© The New York Public Library, ',
         new Date().getFullYear()
       )
     ),
