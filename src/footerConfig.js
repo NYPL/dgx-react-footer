@@ -1,8 +1,8 @@
 const data = {
   nyplLinks: [
     [
-      { name: 'About NYPL',
-        link: '/help/about-nypl',
+      { name: 'Accessibility',
+        link: '/accessibility',
       },
       { name: 'Press',
         link: '/help/about-nypl/media-center',
@@ -32,8 +32,8 @@ const data = {
       { name: 'Rules & Regulations',
         link: '/help/about-nypl/legal-notices/rules-and-regulations',
       },
-      { name: 'Accessibility',
-        link: '/accessibility',
+      { name: 'About NYPL',
+        link: '/help/about-nypl',
       },
       { name: 'Language',
         link: '/language',
