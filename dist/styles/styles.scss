@@ -1,0 +1,254 @@
+@import 'globals';
+@import 'mixins';
+@import 'viewports';
+@import 'fonts';
+
+$footer-color: #54514A;
+
+.footer {
+  padding: 15px 20px 100px;
+  background: $footer-color;
+  color: #fff;
+  font-family: "Kievit-Medium";
+  min-height: 280px;
+  position: relative;
+  clear: both;
+
+  a {
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .svgIcon {
+    fill: #fff;
+  }
+
+  .logoText {
+    position: absolute;
+    top: 20px;
+    left: -105px;
+
+    .nyplLionLogo {
+      height: 120px;
+      width: 250px;
+
+      &-lion {
+        display: none;
+      }
+    }
+
+    @include min-screen($portrait) {
+      top: 20px;
+      left: 1%;
+    }
+
+    @include min-screen($landscape) {
+      left: 2.5%;
+      top: 35px;
+    }
+
+    @include min-screen($large) {
+      left: 5%;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 75px;
+
+    .footerLinks {
+      font-size: 16px;
+      line-height: 35px;
+      margin: 0;
+      padding: 0;
+      order: 2;
+      list-style: none;
+      text-align: right;
+      width: 100%;
+
+      @include min-screen($portrait) {
+        width: auto;
+      }
+
+      .linkItemList {
+        li {
+          @include visuallyHidden;
+
+          &:first-child {
+            @include displayVisuallyHidden;
+          }
+
+          @include min-screen($portrait) {
+            @include displayVisuallyHidden;
+          }
+        }
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        @include min-screen($portrait) {
+          float: left;
+          width: 135px;
+
+          &:first-child {
+            width: 110px;
+          }
+        }
+
+        @include min-screen($landscape) {
+          width: 155px;
+
+          &:first-child {
+            margin-right: 110px;
+          }
+
+          &:nth-child(2) {
+            margin-right: 60px;
+          }
+        }
+
+        @include min-screen($large) {
+          &:first-child,
+          &:nth-child(2) {
+            width: 155px;
+            margin-right: 0;
+          }
+        }
+      }
+
+      // MQs for .footerLinks
+      @include min-screen($portrait) {
+        order: 1;
+        margin: 0;
+        font-size: 13px;
+        line-height: 25px;
+        text-align: left;
+      }
+
+      @include min-screen($landscape) {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+
+      @include min-screen($large) {
+        margin-right: 70px;
+        order: 2;
+      }
+    }
+
+    .socialMedia {
+      order: 1;
+      margin: 20px -6px 15px 0;
+      list-style-type: none;
+      // icons are square, we want three across
+      text-align: right;
+      width: 45px * 3;
+
+      li {
+        display: inline-block;
+        width: 50px;
+
+        a {
+          display: block;
+          color: #FFF;
+          font-size: 40px;
+          line-height: 45px;
+          text-decoration: none;
+
+          svg {
+            width: 36px;
+            height: 36px;
+          }
+
+          @include min-screen($portrait) {
+            font-size: 50px;
+          }
+        }
+
+        [class^="icon-"],
+        [class*=" icon-"] {
+          padding: 0;
+        }
+
+        [data-icon]:before,
+        [class^="icon-"]:before,
+        [class*=" icon-"]:before {
+          margin: 0 5px 0 0 !important;
+        }
+      }
+
+      // MQs for .socialMedia
+      @include min-screen($portrait) {
+        width: 170px;
+        margin-top: 30px;
+      }
+
+      @include min-screen($landscape) {
+        margin-top: 30px;
+      }
+
+      @include min-screen($large) {
+        margin-top: 0;
+        width: 280px;
+      }
+    }
+
+    // MQs for &-content
+    @include min-screen($portrait) {
+      margin: 0;
+      right: 6%;
+      position: absolute;
+      align-items: flex-end;
+    }
+
+    @include min-screen($landscape) {
+      left: 35%;
+    }
+
+    @include min-screen($large) {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  .copyright {
+    margin: 35px 0 0 0;
+    font-size: 12px;
+    font-family: "Kievit-Book";
+    text-align: right;
+
+    @include min-screen($portrait) {
+      font-size: 20px;
+      position: absolute;
+      left: 15%;
+      top: 110px;
+      font-size: 11px;
+    }
+
+    @include min-screen($landscape) {
+      left: 13%;
+      top: 140px;
+      font-size: 13px;
+    }
+  }
+
+  // MQs for .footer
+  @include min-screen($portrait) {
+    padding: 15px 0;
+  }
+
+  @include min-screen($landscape) {
+    padding: 30px 0;
+  }
+}
