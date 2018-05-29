@@ -47,7 +47,9 @@ var SocialMediaItem = function SocialMediaItem(_ref) {
 SocialMediaItem.propTypes = {
   className: _propTypes2.default.string,
   name: _propTypes2.default.string,
-  link: _propTypes2.default.string
+  link: _propTypes2.default.string,
+  component: _propTypes2.default.string,
+  iconId: _propTypes2.default.string
 };
 
 exports.default = SocialMediaItem;

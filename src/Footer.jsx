@@ -22,7 +22,7 @@ const Footer = (props) => (
     <div id="copyright" className="copyright">
       <p>© The New York Public Library, {new Date().getFullYear()}</p>
     </div>
-    <span className="logoText nypl-icon-logo-type">
+    <span className="logoText icon-logo-type">
       <LionLogoWithText title="New York Public Library" ariaHidden={false} />
     </span>
   </footer>

@@ -35,6 +35,8 @@ SocialMediaItem.propTypes = {
   className: PropTypes.string,
   name: PropTypes.string,
   link: PropTypes.string,
+  component: PropTypes.string,
+  iconId: PropTypes.string,
 };
 
 export default SocialMediaItem;

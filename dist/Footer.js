@@ -57,7 +57,7 @@ var Footer = function Footer(props) {
     ),
     _react2.default.createElement(
       'span',
-      { className: 'logoText nypl-icon-logo-type' },
+      { className: 'logoText icon-logo-type' },
       _react2.default.createElement(_dgxSvgIcons.LionLogoWithText, { title: 'New York Public Library', ariaHidden: false })
     )
   );

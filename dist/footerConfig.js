@@ -41,31 +41,31 @@ var data = {
   socialMedia: [{
     name: 'NYPL on Facebook',
     link: 'https://www.facebook.com/nypl',
-    className: 'nypl-icon-facebook',
+    className: 'icon-facebook',
     component: 'FaceBookIcon',
     iconId: 'face-book-id-title'
   }, {
     name: 'NYPL on Twitter',
     link: 'https://twitter.com/nypl',
-    className: 'nypl-icon-twitter',
+    className: 'icon-twitter',
     component: 'TwitterIcon',
     iconId: 'twitter-id-title'
   }, {
     name: 'NYPL on Instagram',
     link: 'https://instagram.com/nypl',
-    className: 'nypl-icon-instagram',
+    className: 'icon-instagram',
     component: 'InstagramIcon',
     iconId: 'instagram-id-title'
   }, {
     name: 'NYPL on Tumblr',
     link: 'https://nypl.tumblr.com/',
-    className: 'nypl-icon-tumblr',
+    className: 'icon-tumblr',
     component: 'TumblrIcon',
     iconId: 'tumblr-id-title'
   }, {
     name: 'NYPL on Youtube',
     link: 'https://www.youtube.com/user/NewYorkPublicLibrary',
-    className: 'nypl-icon-youtube',
+    className: 'icon-youtube',
     component: 'YoutubeIcon',
     iconId: 'youtube-id-title'
   }]
