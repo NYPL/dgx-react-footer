@@ -24,23 +24,36 @@ $footer-color: #54514A;
     }
   }
 
+  .svgIcon {
+    fill: #fff;
+  }
+
   .logoText {
-    font-family: "nypl-moon";
-    font-size: 82px;
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 20px;
+    left: -105px;
+
+    .nyplLionLogo {
+      height: 120px;
+      width: 250px;
+
+      &-lion {
+        display: none;
+      }
+    }
 
     @include min-screen($portrait) {
-      font-size: 75px;
-      top: 15px;
-      left: 15%;
+      top: 20px;
+      left: 1%;
     }
 
     @include min-screen($landscape) {
-      font-size: 80px;
-      left: 13%;
-      top: 30px;
+      left: 2.5%;
+      top: 35px;
+    }
+
+    @include min-screen($large) {
+      left: 5%;
     }
   }
 
@@ -144,6 +157,7 @@ $footer-color: #54514A;
 
       li {
         display: inline-block;
+        width: 50px;
 
         a {
           display: block;
@@ -152,16 +166,9 @@ $footer-color: #54514A;
           line-height: 45px;
           text-decoration: none;
 
-          .replaced-text {
-            /* h5bp technique */
-            border: 0;
-            clip: rect(0 0 0 0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
+          svg {
+            width: 36px;
+            height: 36px;
           }
 
           @include min-screen($portrait) {
@@ -199,8 +206,6 @@ $footer-color: #54514A;
 
     // MQs for &-content
     @include min-screen($portrait) {
-      flex-direction: column;
-      margin-top: 0;
       margin: 0;
       right: 6%;
       position: absolute;
