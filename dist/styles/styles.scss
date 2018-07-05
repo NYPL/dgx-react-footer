@@ -25,10 +25,10 @@ $nypl-white: #fff;
       text-decoration: underline;
     }
 
-     &:focus {
-       background-color: $footer-color;
-       outline: solid $nypl-white;
-     }
+    &:focus {
+      background-color: $footer-color;
+      outline: solid $nypl-white;
+    }
   }
 
   .logoText {
