@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { LionLogoWithText } from '@nypl/dgx-svg-icons';
+
 import FooterLinks from './components/FooterLinks/FooterLinks';
 import SocialMediaList from './components/SocialMediaList/SocialMediaList';
 import footerConfig from './footerConfig';
@@ -20,7 +22,9 @@ const Footer = (props) => (
     <div id="copyright" className="copyright">
       <p>© The New York Public Library, {new Date().getFullYear()}</p>
     </div>
-    <span className="logoText nypl-icon-logo-type"></span>
+    <span className="logoText icon-logo-type">
+      <LionLogoWithText title="New York Public Library" ariaHidden={false} />
+    </span>
   </footer>
 );
 

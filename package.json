@@ -20,7 +20,7 @@
       "email": "seanredmond@nypl.org"
     }
   ],
-  "version": "0.4.1",
+  "version": "0.5.0",
   "main": "dist/Footer.js",
   "license": "MIT",
   "repository": {
@@ -32,7 +32,9 @@
     "babel-build": "./node_modules/.bin/babel -d dist src && cp -r src/styles dist",
     "start": "NODE_ENV=development node server.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@nypl/dgx-svg-icons": "0.3.6"
+  },
   "devDependencies": {
     "babel-cli": "6.11.4",
     "babel-core": "6.24.0",
@@ -41,6 +43,8 @@
     "babel-preset-react": "6.23.0",
     "clean-webpack-plugin": "0.1.10",
     "css-loader": "0.25.0",
+    "eslint": "4.15.0",
+    "eslint-config-airbnb": "16.1.0",
     "extract-text-webpack-plugin": "1.0.1",
     "node-sass": "3.8.0",
     "prop-types": "15.5.10",

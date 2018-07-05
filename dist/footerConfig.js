@@ -4,44 +4,70 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var data = {
-  nyplLinks: [[{ name: 'Accessibility',
+  nyplLinks: [[{
+    name: 'Accessibility',
     link: '/accessibility'
-  }, { name: 'Press',
+  }, {
+    name: 'Press',
     link: '/help/about-nypl/media-center'
-  }, { name: 'Careers',
+  }, {
+    name: 'Careers',
     link: '/careers'
-  }, { name: 'Space Rental',
+  }, {
+    name: 'Space Rental',
     link: '/spacerental'
-  }], [{ name: 'Privacy Policy',
+  }], [{
+    name: 'Privacy Policy',
     link: '/help/about-nypl/legal-notices/privacy-policy'
-  }, { name: 'Other Policies',
+  }, {
+    name: 'Other Policies',
     link: '/policies'
-  }, { name: 'Terms & Conditions',
+  }, {
+    name: 'Terms & Conditions',
     link: '/terms-conditions'
-  }, { name: 'Governance',
+  }, {
+    name: 'Governance',
     link: '/help/about-nypl/leadership/board-trustees'
-  }], [{ name: 'Rules & Regulations',
+  }], [{
+    name: 'Rules & Regulations',
     link: '/help/about-nypl/legal-notices/rules-and-regulations'
-  }, { name: 'About NYPL',
+  }, {
+    name: 'About NYPL',
     link: '/help/about-nypl'
-  }, { name: 'Language',
+  }, {
+    name: 'Language',
     link: '/language'
   }]],
-  socialMedia: [{ name: 'NYPL on Facebook',
+  socialMedia: [{
+    name: 'NYPL on Facebook',
     link: 'https://www.facebook.com/nypl',
-    className: 'nypl-icon-facebook'
-  }, { name: 'NYPL on Twitter',
+    className: 'icon-facebook',
+    component: 'FaceBookIcon',
+    iconId: 'face-book-id-title'
+  }, {
+    name: 'NYPL on Twitter',
     link: 'https://twitter.com/nypl',
-    className: 'nypl-icon-twitter'
-  }, { name: 'NYPL on Instagram',
+    className: 'icon-twitter',
+    component: 'TwitterIcon',
+    iconId: 'twitter-id-title'
+  }, {
+    name: 'NYPL on Instagram',
     link: 'https://instagram.com/nypl',
-    className: 'nypl-icon-instagram'
-  }, { name: 'NYPL on Tumblr',
+    className: 'icon-instagram',
+    component: 'InstagramIcon',
+    iconId: 'instagram-id-title'
+  }, {
+    name: 'NYPL on Tumblr',
     link: 'https://nypl.tumblr.com/',
-    className: 'nypl-icon-tumblr'
-  }, { name: 'NYPL on Youtube',
+    className: 'icon-tumblr',
+    component: 'TumblrIcon',
+    iconId: 'tumblr-id-title'
+  }, {
+    name: 'NYPL on Youtube',
     link: 'https://www.youtube.com/user/NewYorkPublicLibrary',
-    className: 'nypl-icon-youtube'
+    className: 'icon-youtube',
+    component: 'YoutubeIcon',
+    iconId: 'youtube-id-title'
   }]
 };
 
