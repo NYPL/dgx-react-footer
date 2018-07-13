@@ -16,7 +16,7 @@ const availableIcons = {
   YoutubeIcon,
 };
 
-const SocialMediaItem = ({ className, name, link, component, iconId }) =>
+const SocialMediaItem = ({ className, name, link, component, iconId }) => (
   <li>
     <a
       className={className}
@@ -25,11 +25,12 @@ const SocialMediaItem = ({ className, name, link, component, iconId }) =>
       {
         React.createElement(
           availableIcons[component],
-          { title: name, ariaHidden: false, iconId }
+          { title: name, ariaHidden: false, focusable: "false", iconId }
         )
       }
     </a>
-  </li>;
+  </li>
+);
 
 SocialMediaItem.propTypes = {
   className: PropTypes.string,
