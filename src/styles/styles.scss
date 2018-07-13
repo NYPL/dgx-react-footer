@@ -4,23 +4,30 @@
 @import 'fonts';
 
 $footer-color: #54514A;
+$nypl-white: #fff;
 
 .footer {
-  padding: 15px 20px 100px;
   background: $footer-color;
+  clear: both;
   color: #fff;
   font-family: "Kievit-Medium";
   min-height: 280px;
+  padding: 15px 20px 100px;
   position: relative;
-  clear: both;
 
   a {
-    font-weight: 300;
-    color: #fff;
+    color: $nypl-white;
+    font-weight: 400;
+    margin: 0 0.2rem;
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
+    }
+
+    &:focus {
+      background-color: $footer-color;
+      outline: solid 2px $nypl-white;
     }
   }
 
