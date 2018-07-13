@@ -61,7 +61,7 @@ var Footer = function Footer(props) {
       _react2.default.createElement(_dgxSvgIcons.LionLogoWithText, {
         title: 'New York Public Library',
         ariaHidden: false,
-        focusable: 'false'
+        focusable: false
       })
     )
   );

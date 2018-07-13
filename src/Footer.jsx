@@ -26,7 +26,7 @@ const Footer = (props) => (
       <LionLogoWithText
         title="New York Public Library"
         ariaHidden={false}
-        focusable="false"
+        focusable={false}
       />
     </span>
   </footer>

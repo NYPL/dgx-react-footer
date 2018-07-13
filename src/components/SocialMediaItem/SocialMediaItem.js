@@ -25,7 +25,7 @@ const SocialMediaItem = ({ className, name, link, component, iconId }) => (
       {
         React.createElement(
           availableIcons[component],
-          { title: name, ariaHidden: false, focusable: "false", iconId }
+          { title: name, ariaHidden: false, focusable: false, iconId }
         )
       }
     </a>
