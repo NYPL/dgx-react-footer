@@ -39,7 +39,7 @@ var SocialMediaItem = function SocialMediaItem(_ref) {
         className: className,
         href: link
       },
-      _react2.default.createElement(availableIcons[component], { title: name, ariaHidden: false, iconId: iconId })
+      _react2.default.createElement(availableIcons[component], { title: name, ariaHidden: false, focusable: false, iconId: iconId })
     )
   );
 };
