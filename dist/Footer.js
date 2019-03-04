@@ -49,8 +49,13 @@ var Footer = function Footer(props) {
       _react2.default.createElement(
         'p',
         null,
-        '© The New York Public Library, ',
+        '\xA9 The New York Public Library, ',
         new Date().getFullYear()
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        'The New York Public Library is a 501(c)(3) | EIN 13-1887440'
       )
     ),
     _react2.default.createElement('span', { className: 'logoText nypl-icon-logo-type' })
