@@ -8,6 +8,8 @@ const renderSocialMediaItems = (data) =>
       className={item.className}
       name={item.name}
       link={item.link}
+      component={item.component}
+      iconId={item.iconId}
       key={i}
     />
   );

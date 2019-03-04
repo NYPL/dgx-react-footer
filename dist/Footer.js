@@ -12,6 +12,8 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _dgxSvgIcons = require('@nypl/dgx-svg-icons');
+
 var _FooterLinks = require('./components/FooterLinks/FooterLinks');
 
 var _FooterLinks2 = _interopRequireDefault(_FooterLinks);
@@ -58,7 +60,15 @@ var Footer = function Footer(props) {
         'The New York Public Library is a 501(c)(3) | EIN 13-1887440'
       )
     ),
-    _react2.default.createElement('span', { className: 'logoText nypl-icon-logo-type' })
+    _react2.default.createElement(
+      'span',
+      { className: 'logoText icon-logo-type' },
+      _react2.default.createElement(_dgxSvgIcons.LionLogoWithText, {
+        title: 'New York Public Library',
+        ariaHidden: false,
+        focusable: false
+      })
+    )
   );
 };
 
