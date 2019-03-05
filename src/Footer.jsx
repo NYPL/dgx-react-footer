@@ -21,6 +21,7 @@ const Footer = (props) => (
     </div>
     <div id="copyright" className="copyright">
       <p>© The New York Public Library, {new Date().getFullYear()}</p>
+      <p>The New York Public Library is a 501(c)(3) | EIN 13-1887440</p>
     </div>
     <span className="logoText icon-logo-type">
       <LionLogoWithText
