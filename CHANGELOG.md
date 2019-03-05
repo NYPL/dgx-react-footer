@@ -1,5 +1,8 @@
 ## CHANGELOG
 
+### v0.5.2
+- Adding non-profit status and EIN information.
+
 ### v0.5.1
 - Update to footer styles to use a solid white outline when a link has keyboard focus.
 - Adding focusable="false" attribute to SVGs.
