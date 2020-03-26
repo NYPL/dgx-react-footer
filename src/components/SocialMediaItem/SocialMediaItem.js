@@ -4,7 +4,6 @@ import {
   TwitterIcon,
   FaceBookIcon,
   InstagramIcon,
-  TumblrIcon,
   YoutubeIcon,
 } from '@nypl/dgx-svg-icons';
 
@@ -12,7 +11,6 @@ const availableIcons = {
   TwitterIcon,
   FaceBookIcon,
   InstagramIcon,
-  TumblrIcon,
   YoutubeIcon,
 };
 
