@@ -1,8 +1,11 @@
 ## CHANGELOG
 
+### v0.5.4
+- Added system-font-css.
+
 ### v0.5.3
 - Removed Tumblr icon, as the account in no longer maintained.
-- Removed Kievit font, to reduce license usage. Added system-font-css.
+- Removed Kievit font, to reduce license usage.
 
 ### v0.5.2
 - Adding non-profit status and EIN information.
