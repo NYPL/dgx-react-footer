@@ -20,7 +20,6 @@ var availableIcons = {
   TwitterIcon: _dgxSvgIcons.TwitterIcon,
   FaceBookIcon: _dgxSvgIcons.FaceBookIcon,
   InstagramIcon: _dgxSvgIcons.InstagramIcon,
-  TumblrIcon: _dgxSvgIcons.TumblrIcon,
   YoutubeIcon: _dgxSvgIcons.YoutubeIcon
 };
 
