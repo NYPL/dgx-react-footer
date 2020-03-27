@@ -1,7 +1,6 @@
 @import 'globals';
 @import 'mixins';
 @import 'viewports';
-@import 'fonts';
 
 $footer-color: #54514A;
 $nypl-white: #fff;
@@ -10,7 +9,7 @@ $nypl-white: #fff;
   background: $footer-color;
   clear: both;
   color: #fff;
-  font-family: "Kievit-Medium";
+  font-family: Sans-Serif;
   min-height: 280px;
   padding: 15px 20px 100px;
   position: relative;
@@ -232,7 +231,7 @@ $nypl-white: #fff;
   .copyright {
     margin: 35px 0 0 0;
     font-size: 12px;
-    font-family: "Kievit-Book";
+    font-family: Sans-Serif;
     text-align: right;
 
     @include min-screen($portrait) {

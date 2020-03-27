@@ -57,12 +57,6 @@ var data = {
     component: 'InstagramIcon',
     iconId: 'instagram-id-title'
   }, {
-    name: 'NYPL on Tumblr',
-    link: 'https://nypl.tumblr.com/',
-    className: 'icon-tumblr',
-    component: 'TumblrIcon',
-    iconId: 'tumblr-id-title'
-  }, {
     name: 'NYPL on Youtube',
     link: 'https://www.youtube.com/user/NewYorkPublicLibrary',
     className: 'icon-youtube',
