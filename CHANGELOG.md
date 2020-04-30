@@ -1,7 +1,7 @@
 ## CHANGELOG
 
 ### v0.5.5
-- Update to @nypl/dgx-svg-icons 0.3.10.
+- Update to @nypl/dgx-svg-icons 0.3.11.
 - Adjusted width constraint on social media icons to avoid wrapping.
 - Adjusted system-ui font stack to account for Firefox v.75.
 

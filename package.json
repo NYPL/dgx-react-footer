@@ -32,7 +32,7 @@
     "start": "NODE_ENV=development node server.js"
   },
   "dependencies": {
-    "@nypl/dgx-svg-icons": "0.3.10",
+    "@nypl/dgx-svg-icons": "0.3.11",
     "system-font-css": "^2.0.2"
   },
   "devDependencies": {
