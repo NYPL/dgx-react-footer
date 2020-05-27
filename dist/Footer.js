@@ -47,23 +47,32 @@ var Footer = function Footer(props) {
     ),
     _react2.default.createElement(
       'div',
-      { id: 'copyright', className: 'copyright' },
+      { className: 'footer-content--secondary' },
       _react2.default.createElement(
-        'p',
-        null,
-        '\xA9 The New York Public Library, ',
-        new Date().getFullYear()
+        'div',
+        { className: 'facade' },
+        _react2.default.createElement('img', { src: 'https://cdn-d8.nypl.org/s3fs-public/2020-05/NYPL_MainFacadeRev2Cam2.png', alt: 'NYPL Main Building Facade' })
       ),
       _react2.default.createElement(
-        'p',
-        null,
-        'The New York Public Library is a 501(c)(3) | EIN 13-1887440'
+        'div',
+        { className: 'copyright' },
+        _react2.default.createElement(
+          'p',
+          null,
+          '\xA9 The New York Public Library, ',
+          new Date().getFullYear()
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'The New York Public Library is a 501(c)(3) | EIN 13-1887440'
+        )
       )
     ),
     _react2.default.createElement(
       'span',
       { className: 'logoText icon-logo-type' },
-      _react2.default.createElement(_dgxSvgIcons.LionLogoWithText, {
+      _react2.default.createElement(_dgxSvgIcons.NYPLTextLogo, {
         title: 'New York Public Library',
         ariaHidden: false,
         focusable: false

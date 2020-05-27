@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+### v0.5.6
+- Update to @nypl/dgx-svg-icons 0.3.12.
+- Update to use NYPL "text-only" svg logo.
+- Added SASB building facade image.
+
 ### v0.5.5
 - Update to @nypl/dgx-svg-icons 0.3.11.
 - Adjusted width constraint on social media icons to avoid wrapping.

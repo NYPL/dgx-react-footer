@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { LionLogoWithText } from '@nypl/dgx-svg-icons';
+import { NYPLTextLogo } from '@nypl/dgx-svg-icons';
 
 import FooterLinks from './components/FooterLinks/FooterLinks';
 import SocialMediaList from './components/SocialMediaList/SocialMediaList';
@@ -19,12 +19,17 @@ const Footer = (props) => (
         className="socialMedia"
       />
     </div>
-    <div id="copyright" className="copyright">
-      <p>© The New York Public Library, {new Date().getFullYear()}</p>
-      <p>The New York Public Library is a 501(c)(3) | EIN 13-1887440</p>
+    <div className="footer-content--secondary">
+      <div className="facade">
+        <img src="https://cdn-d8.nypl.org/s3fs-public/2020-05/NYPL_MainFacadeRev2Cam2.png" alt="NYPL Main Building Facade" />
+      </div>
+      <div className="copyright">
+        <p>© The New York Public Library, {new Date().getFullYear()}</p>
+        <p>The New York Public Library is a 501(c)(3) | EIN 13-1887440</p>
+      </div>
     </div>
     <span className="logoText icon-logo-type">
-      <LionLogoWithText
+      <NYPLTextLogo
         title="New York Public Library"
         ariaHidden={false}
         focusable={false}
