@@ -6,37 +6,37 @@ Object.defineProperty(exports, "__esModule", {
 var data = {
   nyplLinks: [[{
     name: 'Accessibility',
-    link: '/accessibility'
+    link: 'http://www.nypl.org/accessibility'
   }, {
     name: 'Press',
-    link: '/help/about-nypl/media-center'
+    link: 'http://www.nypl.org/help/about-nypl/media-center'
   }, {
     name: 'Careers',
     link: '/careers'
   }, {
     name: 'Space Rental',
-    link: '/spacerental'
+    link: 'http://www.nypl.org/spacerental'
   }], [{
     name: 'Privacy Policy',
-    link: '/help/about-nypl/legal-notices/privacy-policy'
+    link: 'http://www.nypl.org/help/about-nypl/legal-notices/privacy-policy'
   }, {
     name: 'Other Policies',
-    link: '/policies'
+    link: 'http://www.nypl.org/policies'
   }, {
     name: 'Terms & Conditions',
-    link: '/terms-conditions'
+    link: 'http://www.nypl.org/terms-conditions'
   }, {
     name: 'Governance',
-    link: '/help/about-nypl/leadership/board-trustees'
+    link: 'http://www.nypl.org/help/about-nypl/leadership/board-trustees'
   }], [{
     name: 'Rules & Regulations',
-    link: '/help/about-nypl/legal-notices/rules-and-regulations'
+    link: 'http://www.nypl.org/help/about-nypl/legal-notices/rules-and-regulations'
   }, {
     name: 'About NYPL',
-    link: '/help/about-nypl'
+    link: 'http://www.nypl.org/help/about-nypl'
   }, {
     name: 'Language',
-    link: '/language'
+    link: 'http://www.nypl.org/language'
   }]],
   socialMedia: [{
     name: 'NYPL on Facebook',

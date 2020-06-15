@@ -37,7 +37,8 @@ var Footer = function Footer(props) {
       { className: props.className + '-content' },
       _react2.default.createElement(_FooterLinks2.default, {
         className: 'footerLinks',
-        data: _footerConfig2.default.nyplLinks
+        data: _footerConfig2.default.nyplLinks,
+        urlType: props.urlType
       }),
       _react2.default.createElement(_SocialMediaList2.default, {
         data: _footerConfig2.default.socialMedia,
@@ -83,12 +84,14 @@ var Footer = function Footer(props) {
 
 Footer.propTypes = {
   id: _propTypes2.default.string,
-  className: _propTypes2.default.string
+  className: _propTypes2.default.string,
+  urlType: _propTypes2.default.string
 };
 
 Footer.defaultProps = {
   id: 'footer',
-  className: 'footer'
+  className: 'footer',
+  urlType: 'relative'
 };
 
 exports.default = Footer;
