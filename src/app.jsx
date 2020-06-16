@@ -10,6 +10,6 @@ a11y(React, { ReactDOM, includeSrcNode: true });
  * Used for local development of React Components
  */
 ReactDOM.render(
-  <Footer id="footer" className="footer" />,
+  <Footer id="footer" className="footer" urlType="absolute" />,
   document.getElementById('footerPreview')
 );

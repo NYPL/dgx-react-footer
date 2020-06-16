@@ -20,7 +20,7 @@
       "email": "seanredmond@nypl.org"
     }
   ],
-  "version": "0.5.6",
+  "version": "0.5.7",
   "main": "dist/Footer.js",
   "license": "MIT",
   "repository": {
