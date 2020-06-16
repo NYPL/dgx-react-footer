@@ -12,6 +12,7 @@ const Footer = (props) => (
       <FooterLinks
         className="footerLinks"
         data={footerConfig.nyplLinks}
+        urlType={props.urlType}
       />
       <SocialMediaList
         data={footerConfig.socialMedia}
@@ -41,11 +42,13 @@ const Footer = (props) => (
 Footer.propTypes = {
   id: PropTypes.string,
   className: PropTypes.string,
+  urlType: PropTypes.string,
 };
 
 Footer.defaultProps = {
   id: 'footer',
   className: 'footer',
+  urlType: 'relative',
 };
 
 export default Footer;
