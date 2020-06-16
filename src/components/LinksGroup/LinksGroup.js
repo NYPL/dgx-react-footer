@@ -1,14 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-const convertUrlRelative = (url) => {
-  if (typeof url !== 'string') {
-    return '#';
-  }
-  const regex = new RegExp(/^http(s)?\:\/\/(www.)?nypl.org/i);
-  // Test regex matching pattern
-  return (regex.test(url)) ? url.replace(regex, '') : url;
-};
+import { convertUrlRelative } from '../../utils/utils.js'
 
 const renderLinkItems = (data, urlType) =>
   data.map((item, i) =>

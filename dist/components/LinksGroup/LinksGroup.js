@@ -12,16 +12,9 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _utils = require('../../utils/utils.js');
 
-var convertUrlRelative = function convertUrlRelative(url) {
-  if (typeof url !== 'string') {
-    return '#';
-  }
-  var regex = new RegExp(/^http(s)?\:\/\/(www.)?nypl.org/i);
-  // Test regex matching pattern
-  return regex.test(url) ? url.replace(regex, '') : url;
-};
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var renderLinkItems = function renderLinkItems(data, urlType) {
   return data.map(function (item, i) {
@@ -31,7 +24,7 @@ var renderLinkItems = function renderLinkItems(data, urlType) {
       _react2.default.createElement(
         'a',
         {
-          href: urlType === 'absolute' ? item.link : convertUrlRelative(item.link)
+          href: urlType === 'absolute' ? item.link : (0, _utils.convertUrlRelative)(item.link)
         },
         item.name
       )
