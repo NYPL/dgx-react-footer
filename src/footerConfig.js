@@ -11,7 +11,7 @@ const data = {
       },
       {
         name: 'Careers',
-        link: '/careers',
+        link: 'http://www.nypl.org/careers',
       },
       {
         name: 'Space Rental',

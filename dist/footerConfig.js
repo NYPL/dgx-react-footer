@@ -12,7 +12,7 @@ var data = {
     link: 'http://www.nypl.org/help/about-nypl/media-center'
   }, {
     name: 'Careers',
-    link: '/careers'
+    link: 'http://www.nypl.org/careers'
   }, {
     name: 'Space Rental',
     link: 'http://www.nypl.org/spacerental'
