@@ -20,7 +20,7 @@
       "email": "seanredmond@nypl.org"
     }
   ],
-  "version": "0.5.7",
+  "version": "0.5.8",
   "main": "dist/Footer.js",
   "license": "MIT",
   "repository": {
@@ -32,7 +32,7 @@
     "start": "NODE_ENV=development node server.js"
   },
   "dependencies": {
-    "@nypl/dgx-svg-icons": "0.3.12",
+    "@nypl/dgx-svg-icons": "0.3.13",
     "system-font-css": "^2.0.2"
   },
   "devDependencies": {
