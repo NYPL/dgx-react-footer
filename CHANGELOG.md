@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### v0.5.8
+- Update to @nypl/dgx-svg-icons 0.3.13.
+
+### v0.5.7
+- Add urlType option for absolute or relative links.
+
 ### v0.5.6
 - Update to @nypl/dgx-svg-icons 0.3.12.
 - Update to use NYPL "text-only" svg logo.
