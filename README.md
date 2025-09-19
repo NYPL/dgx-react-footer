@@ -1,3 +1,6 @@
+DEPRECATED: 
+This package is no longer being used.  Please see https://github.com/NYPL/nypl-header-app for use of the NYPL Header and Footer
+
 # NYPL Footer
 
 This repository is the footer component for the ReactJS applications of nypl.org.
