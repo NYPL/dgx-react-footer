@@ -46,7 +46,7 @@
     "eslint": "4.15.0",
     "eslint-config-airbnb": "16.1.0",
     "extract-text-webpack-plugin": "1.0.1",
-    "node-sass": "4.6.0",
+    "node-sass": "7.0.0",
     "prop-types": "15.5.10",
     "react": "15.5.4",
     "react-a11y": "0.3.3",
